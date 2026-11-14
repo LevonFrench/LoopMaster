@@ -1,0 +1,1025 @@
+{
+  "format": "sa3-public-export",
+  "version": 1,
+  "sourceCommit": "4e81a9f55c04dabff7488b17016034a2933397b3",
+  "sourceDirty": true,
+  "fileCount": 203,
+  "totalBytes": 3677455,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 1066,
+      "sha256": "513c0e8ce985a8df53fb548b9e00f517d9dffb6c911f07639541bdbf030f58b2"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 11570,
+      "sha256": "ef1f8ee3857bc63fbbe0b618ef7671bde17e122fe0f5e69ea687473aea162ce2"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "4ff556f25105084eb2d16ab1a2bcbfbb32cb25146c932c61b9018995d3149311"
+    },
+    {
+      "path": "QUICKSTART.md",
+      "bytes": 703,
+      "sha256": "1c2265115b9f3b2b96ae17f3c805a00617d365fa433a79f12a12c2f91f6ca71f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6179,
+      "sha256": "e14915648c4c0985cef9cf477e8197344b6158009321098ba27b6b47a9ea78bc"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2863,
+      "sha256": "71116041709cbb1c1585e5b595763a22bad0b8010713500b233b03afda12c424"
+    },
+    {
+      "path": "loopmaster-desktop/launcher.html",
+      "bytes": 3432,
+      "sha256": "82d067ba0aa1a50222b43d6b80abbc66e88ec6fea25b9ea16e21002255c5eed1"
+    },
+    {
+      "path": "loopmaster-desktop/loading.html",
+      "bytes": 1338,
+      "sha256": "511c5b20af6bd65de229fba1134e27f9330ba4d1668f3533ae5d227c8ec3774e"
+    },
+    {
+      "path": "loopmaster-desktop/main.js",
+      "bytes": 9430,
+      "sha256": "4fb2de5084d71dfd387231f52091e04a27ec7f19fcc53a547adefd5c62a2bb1e"
+    },
+    {
+      "path": "loopmaster-desktop/package-lock.json",
+      "bytes": 5789,
+      "sha256": "933051d39e7faf4d09927be43225bb3943f8f8923b18bc5613934e27ee567ffe"
+    },
+    {
+      "path": "loopmaster-desktop/package.json",
+      "bytes": 436,
+      "sha256": "a04af44555e163c72653c24d3d76619552e7b87a04e75f7392edec5f787a7bb8"
+    },
+    {
+      "path": "loopmaster-desktop/preload.js",
+      "bytes": 346,
+      "sha256": "07a09eb12101ee1877536160513fda699dbfe4d277370e5be90199c940da96d4"
+    },
+    {
+      "path": "loopmaster-desktop/qa/frontend-qa.js",
+      "bytes": 65705,
+      "sha256": "498cf58eb52f101f8da1d1179bc5f204c69a2cbad807a1d32917eefdf44862c2"
+    },
+    {
+      "path": "loopmaster-desktop/shared.css",
+      "bytes": 261,
+      "sha256": "cfaae10f6e791dc06b84d0932954fc52aafa164531afdb83ce768e6a1fcee7a3"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/app_server.py",
+      "bytes": 69299,
+      "sha256": "56bcc272aaa526a8d5d25adbd27e68b3c98fe6deaf1292ffc0e8473b7b5b4925"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/asset_contract.py",
+      "bytes": 36349,
+      "sha256": "fac9cb382724264c668e1b7065f2806b09b02e4c4ff95afee9f8581f89e29a79"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/beta_access.py",
+      "bytes": 6717,
+      "sha256": "dea1f2ec0f47e98cfe1fae7ca9eb6c6b60e10f2190fb78aba1c80048c733fa92"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/chord_progressions.py",
+      "bytes": 10751,
+      "sha256": "e45559235f8d256abf206015c3486e3a623c21d720f2c3afb28567f8ea6ad655"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/fanout.py",
+      "bytes": 3668,
+      "sha256": "d867347b3edd30625ac7feed897ea714e4c067a189d223e7bb63c6e74b3fb662"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/generate_variants.py",
+      "bytes": 12441,
+      "sha256": "fa9ef8d74f21ddce067d97342896fb2e52f1e8c4a615abc7b8fd211bfdfdb944"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/generation_executor.py",
+      "bytes": 31813,
+      "sha256": "1aea090dc429875c01fc737029bb9dd112d1634af0737b6eca07dc0b60e6cab9"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/generation_queue.py",
+      "bytes": 4920,
+      "sha256": "66598be9e3255d62e432460b8e206c1ad34e8bb2c5eb9a10c9a9cb9912978421"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/job_history.py",
+      "bytes": 7805,
+      "sha256": "d0eaa60b3ee2a1b9992474f3d4aa9751d7979b2433b1708c67e56c44b593e14e"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/kit_executor.py",
+      "bytes": 17453,
+      "sha256": "f6b7f50ac63865324bca694c789a52bbd4f0a65f7f6705de5bc322428f213cd4"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/rate_limit.py",
+      "bytes": 1577,
+      "sha256": "3df097c912c4df776643d95073bc9c6df8eed065ef397bc5d3bea09348dd3e53"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/requirements.txt",
+      "bytes": 145,
+      "sha256": "14e74b6e746ed089be898fc4cd4fece86c9fe3bb5e0deffc2c09c5b4e085f6c2"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/sliceable_registry.py",
+      "bytes": 3724,
+      "sha256": "b1a151a953c1a4a96641ddcf4d6ba08dddf6c033640d03d86c2284ab2988ef43"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/app.css",
+      "bytes": 118100,
+      "sha256": "5c0d3d009b7b2ef0890c56e4001b526394b9c77a5339d080f9f2e56bc5e3f4af"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/app.js",
+      "bytes": 463528,
+      "sha256": "75fe23dff05140f156f63158973c5a3c2b3cd771926265b700890b242d449701"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/audio-scheduler-worker.js",
+      "bytes": 377,
+      "sha256": "60272dcfa09b2245d2a2c78320529ff705fcf2139282d2541fa5e4ec0c1aed1b"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/chord_progression_core.js",
+      "bytes": 10460,
+      "sha256": "e54308dca3f640179a633543a6bb143ff029b5bc59c82b33e8be26bb13e88b11"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/chord_progressions.json",
+      "bytes": 8646,
+      "sha256": "efe0c05be8da96ff656b46eafa7bcc3ae9c6cb5f19ae090c22b413100572f5cd"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/index.html",
+      "bytes": 80575,
+      "sha256": "1648fb807f9fd64656bb502dfad4768bbbf96e023c1fe7aaafbd28e4a0c04695"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_builder.js",
+      "bytes": 51292,
+      "sha256": "4840a644ceaf9009020953e570d97dcd086a3238c4db767abd739a2b8c55d63f"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_core.js",
+      "bytes": 15114,
+      "sha256": "ee62c1d141759c6211b3dc0eb67b147942a564a5e3767d865ea0ce824219dcbe"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_options.json",
+      "bytes": 2215,
+      "sha256": "58488e7542735c4ee100522ec92d1db1f04659a19499a72f9eb942dfa1e2df2b"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_options/acoustic.json",
+      "bytes": 2582,
+      "sha256": "6059572066ae49a56e4395f3dfd4da1a4a605bcd6b4fdfeaaf4656e484e2e502"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_options/avoid.json",
+      "bytes": 3256,
+      "sha256": "e4eafa2becb7c0311fa9b43d5da0793c76038296841d489986fa41e2f08bcb3e"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_options/drums.json",
+      "bytes": 3356,
+      "sha256": "dc265c0b775cdb6020860e2a3e5580a06b603887ad28ef3921bd0fc6785a1df0"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_options/electric.json",
+      "bytes": 4122,
+      "sha256": "9bca621c9e415dc1f1e8a1bbcd07b67139706566720cefd0edb13bdcdeebac4d"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_options/genre.json",
+      "bytes": 4596,
+      "sha256": "b2005f968fcb8a8dc1316c924c11b73e60cd8b66a902f1f144dd911c4b7fc492"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_options/modifiers.json",
+      "bytes": 4792,
+      "sha256": "d34297025c23d1f1ad2260ff7d808a7b671fa400c7a0f72e2277518e38ecb7c1"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_options/mood.json",
+      "bytes": 2724,
+      "sha256": "6ecbca1f3e658f235766185265a7da09f393e12dd4e8c9c060d68a0aa2b4f0f6"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/prompt_options/performance.json",
+      "bytes": 4205,
+      "sha256": "5dae9ce27fd8f855df6d44db096b800466957ca688f9a50e71d85c697e805054"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/skin-core.css",
+      "bytes": 6857,
+      "sha256": "462d4f83c883dde6304eedc7b4404178c6f3e9485bd38b3fc96a9962b7d74442"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/skins/cutline.v1.css",
+      "bytes": 31507,
+      "sha256": "7b86f2433d22c76c729858fb10615e1de2c11001d0baa342b2cc60765fcaadab"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/skins/original.v1.css",
+      "bytes": 1839,
+      "sha256": "abe23592b1473ad456109ee9c9b0566baff54b7f747d649c885722ce466fd8af"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/skins/padmode.v1.css",
+      "bytes": 52282,
+      "sha256": "99863671ee0e68c1d310188f83f4055c49e6a1023fbcb6e0a4e69ebf6e6a4bbe"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/skins/session-sheet.v1.css",
+      "bytes": 59592,
+      "sha256": "686541bf0af34f22e54b1f0e0529e21cc302a4735828393f0ef1c6c192937027"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/skins/skin_catalog.js",
+      "bytes": 1812,
+      "sha256": "64e199367c1ac3abb1dfe9abdee4c46b2226dfc727c6882732d7a469c7ea5677"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/skins/skin_core.js",
+      "bytes": 3055,
+      "sha256": "8362dcd1738c6579458bf79022f9762aba37c3cb516c2bff9db3d8f8770a2987"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/skins/skin_system.js",
+      "bytes": 12167,
+      "sha256": "6476edfa041b133db5f4963d8a49565b26b8b3a837e37a3a296cbb7be581405e"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/tuna.js",
+      "bytes": 79521,
+      "sha256": "90dff0a8cb6510f0a044a06befba1f57a7f10d2b72ac060f5f0e3275cc894ecf"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/vendor/HTML2CANVAS-LICENSE",
+      "bytes": 1061,
+      "sha256": "86200ce4e92d9a22c41c8647a55f7a5fddff304ff89b4d36ecc699ed8c123d2c"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/vendor/JSZIP-LICENSE.markdown",
+      "bytes": 33753,
+      "sha256": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/vendor/README.md",
+      "bytes": 659,
+      "sha256": "26abdc93bfe75a2233cee19d3c79469f938d2d1e25bb57c97667684570a0f1a2"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/vendor/html2canvas-1.4.1.min.js",
+      "bytes": 198689,
+      "sha256": "e87e550794322e574a1fda0c1549a3c70dae5a93d9113417a429016838eab8cb"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/vendor/jszip-3.10.1.min.js",
+      "bytes": 97630,
+      "sha256": "acc7e41455a80765b5fd9c7ee1b8078a6d160bbbca455aeae854de65c947d59e"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/static/wav_metadata_core.js",
+      "bytes": 4027,
+      "sha256": "eb1fc9106e24a34d0c8d02ca89e307ac3954c597c3059e576dde0569685ac7cd"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/conftest.py",
+      "bytes": 718,
+      "sha256": "c00f95597ea5b1e395b5ceae179c1e48cc4cf7d2ac277b34fb4a9f1178016d3b"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_app_server_immediate_fixes.py",
+      "bytes": 9983,
+      "sha256": "7ec297631d9a9351d01c80f9ef5b9f7e11c8b08cdf89531ba8d15d26f184c5a5"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_asset_contract.py",
+      "bytes": 19274,
+      "sha256": "740ede00fbe99326abbd1567c6aa386af0e880acbfd472eaaaf67517a4fb1207"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_beta_access.py",
+      "bytes": 2753,
+      "sha256": "388263dad1109a1a7f1256da8ec1e3dd3cd633748c580f5db53d98bbbb9cb68f"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_chord_progressions.py",
+      "bytes": 2976,
+      "sha256": "15408dcec883a5abe7f6d34d3b511669657c950cf38b8a6e6d2e3985f0831ed9"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_fanout.py",
+      "bytes": 2231,
+      "sha256": "2e6adc1c580cf22b5f71665a56ba913b338a4e5c3b74e3a7f7d31b1e4f0064b6"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_generation_executor.py",
+      "bytes": 10069,
+      "sha256": "117adf23ee537cb8990cb837a04e7fcb1700eb29607383f40cdc223deb35b278"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_generation_queue.py",
+      "bytes": 17531,
+      "sha256": "dd578627272fa2e7215e17c5e2aab05bc441a92a81611c5bbae3cc2733c60b48"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_job_history.py",
+      "bytes": 5680,
+      "sha256": "49c4c92ba7cb1eb801fde8411f8642352f35ec10898fbb3ea4a399c6153b0716"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_kit_executor.py",
+      "bytes": 2670,
+      "sha256": "5fe3ac182fa8c8ee093853cd05519df6586b7364e80aaf98772e3cb601ee5b8f"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_rate_limit.py",
+      "bytes": 798,
+      "sha256": "a68425168af1fab9eb62a7e63d708277aa92817f0145b9787f2d41299743dddf"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_review_backend_fixes.py",
+      "bytes": 13332,
+      "sha256": "145533c0a7bc7fe5bd4f7af8633a5d87583c969b16b1257595557497f19c4e54"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_sliceable_registry.py",
+      "bytes": 1444,
+      "sha256": "f17f7a634e77889650f7aaaebdfd640c770c694cd7df9b172baccc4e2c125ab3"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_startup_policy.py",
+      "bytes": 513,
+      "sha256": "a163c1bd2be629bea300cbd888801488f7d9adeaecbab1b831118bfb50f99bb6"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests/test_wav_metadata_errors.py",
+      "bytes": 2681,
+      "sha256": "a845d7fdda9ecc2130b82d91934fc40a0f755dcc06d15a03860f64c1d2466326"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests_js/audio_scheduler_worker.test.js",
+      "bytes": 1519,
+      "sha256": "54bb8de16cbe6bf3e80e1d71f5fbf51f41451d8ea631c0f554f6aff21ecb085d"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests_js/chord_progression_core.test.js",
+      "bytes": 4971,
+      "sha256": "630b8aebf786ff33cc1de4277174ddfbb8a5d8eb79b84f7377a7373bb65297b9"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests_js/prompt_builder.test.js",
+      "bytes": 8133,
+      "sha256": "9bc23bfa92ce8ead235cc279d86c91bf632ecdcb0ec1fc5fb03513402d4f0f46"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests_js/prompt_core.test.js",
+      "bytes": 15616,
+      "sha256": "772f18fab279e68e97b23b6793707220c7fe8e6161ab304bed8578c93d9467d0"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests_js/skin_core.test.js",
+      "bytes": 3673,
+      "sha256": "b99780d751b3de4329c86d0e528b32b4592357b0120da0caa8599fe21718d5ba"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests_js/skin_system.test.js",
+      "bytes": 6062,
+      "sha256": "5d84f450f9445e333732fcd6506e8b1d955647980174ebe2ba1e6e4600715278"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/tests_js/wav_metadata_core.test.js",
+      "bytes": 4967,
+      "sha256": "bf9ee1803aa6fa989a615938b459ce516639a9f5410ecf5586031fceb12edf03"
+    },
+    {
+      "path": "loopmaster/loopmaster-app/wav_metadata.py",
+      "bytes": 19304,
+      "sha256": "4b9d08a3731cfd1e8334aeee92430c1dec7fc12b52b9754dff394864aa53df79"
+    },
+    {
+      "path": "loopprompts/README.md",
+      "bytes": 6369,
+      "sha256": "32f09764818b1f49f585904af3dea5f6d641462b9bdbbce6b237d0ac86b40442"
+    },
+    {
+      "path": "loopprompts/afterhours-conga-house-35.md",
+      "bytes": 1936,
+      "sha256": "c26ce8f504ee3a6bc3d6eca4802111c5ad89440f97e63ccb9a90fb1c093ed706"
+    },
+    {
+      "path": "loopprompts/amber-string-trap-21.md",
+      "bytes": 1944,
+      "sha256": "76c78adcf81ceb302e230dea2281397e52af64005fc7e105da90b1a0455c45ca"
+    },
+    {
+      "path": "loopprompts/astral-tide-wave-19.md",
+      "bytes": 1935,
+      "sha256": "ad90c3c26ffcffc585cd8ad103166e6a0b334690baf86bd3fd005643085a1417"
+    },
+    {
+      "path": "loopprompts/bamboo-bronze-rhythm-41.md",
+      "bytes": 2363,
+      "sha256": "7e2a8579e8b8bbf2d4c1a24f71d5c5f1b6f9a6364ea2754b446535b5c6665a3b"
+    },
+    {
+      "path": "loopprompts/catalog.json",
+      "bytes": 111975,
+      "sha256": "b53d09bec9f8dccf7f8e35418ed82ef3257e7e3f1d787f7874781fa4155652bd"
+    },
+    {
+      "path": "loopprompts/chrome-motion-textures-05.md",
+      "bytes": 2885,
+      "sha256": "bf4ef27865df2d00b77d76090dd6a4e4ab9302724774ffb328a1542a616dc87e"
+    },
+    {
+      "path": "loopprompts/circuit-warehouse-drums-28.md",
+      "bytes": 2466,
+      "sha256": "290e7748a80abe825a6d892df5cebff8eaba3510cf337fe5e80a4a7c93f9c011"
+    },
+    {
+      "path": "loopprompts/concrete-pocket-trap-03.md",
+      "bytes": 2358,
+      "sha256": "cdb55689ed7903bbbc7010ece502171a6b403fe7019a8a72f57d4b433d42d15b"
+    },
+    {
+      "path": "loopprompts/crystal-cloud-trap-34.md",
+      "bytes": 1915,
+      "sha256": "61e1ae524b4126aaec24c5ad0a7a3407463641402df3d23a9674481309195633"
+    },
+    {
+      "path": "loopprompts/deep-ember-house-45.md",
+      "bytes": 1987,
+      "sha256": "eb32689ae6683fc324a8aa06290cc6fde288f3c54323fb1e981f370c78431657"
+    },
+    {
+      "path": "loopprompts/dusty-basement-beats-47.md",
+      "bytes": 1917,
+      "sha256": "5f242ae52f67341679301a83516409278a5e0dd68fff20454021fe4b5115dc1b"
+    },
+    {
+      "path": "loopprompts/dusty-ribbon-breaks-10.md",
+      "bytes": 2456,
+      "sha256": "07cf392cf42c6642e6b5cad0ac1f9a5fc8778c8884871840d032e5749c580466"
+    },
+    {
+      "path": "loopprompts/electric-satin-funk-17.md",
+      "bytes": 1925,
+      "sha256": "cdea7cd607b633823be1f689c79ea3081f5b093550f611057b50f55375ea3fb0"
+    },
+    {
+      "path": "loopprompts/faded-cassette-dreams-16.md",
+      "bytes": 2400,
+      "sha256": "20e2d1a7ca05cceb20a33840524a21a207bd4e9615de1e69b0d7f2c05c25a88a"
+    },
+    {
+      "path": "loopprompts/forgotten-attic-breaks-38.md",
+      "bytes": 2477,
+      "sha256": "c8871936db2639ea92972c7b2d635d27143eb573fcfea03e7a35c3588439198d"
+    },
+    {
+      "path": "loopprompts/fractured-steel-bass-31.md",
+      "bytes": 2444,
+      "sha256": "d8fcf160c3339359d30cc2ed6a750b5e1710780f4b3ab677fe226d382da0beec"
+    },
+    {
+      "path": "loopprompts/frayed-heart-trap-14.md",
+      "bytes": 1957,
+      "sha256": "d536ab886ced9361508bae384bc18bb677e1d64010f790c3445cbf02d477ccb4"
+    },
+    {
+      "path": "loopprompts/frozen-skyline-trap-12.md",
+      "bytes": 1924,
+      "sha256": "d6e7001147d9c83ec4631e6f145ecc2bf48cf369257c48e358a655c0ac0c7ef8"
+    },
+    {
+      "path": "loopprompts/furnace-acid-pulse-26.md",
+      "bytes": 2424,
+      "sha256": "8ffae509a1ac14540a253bc3aa12c1cde4e98974c84a70aaaf502b7fed9158a0"
+    },
+    {
+      "path": "loopprompts/golden-skyline-house-43.md",
+      "bytes": 2398,
+      "sha256": "c63c4e853833ee72e76eb22a0c41067311b8e38ab3d3fa300637103bc87eebad"
+    },
+    {
+      "path": "loopprompts/golden-sunday-soul-13.md",
+      "bytes": 1981,
+      "sha256": "533a3fc5f4642b8a5928e903b1e90a4ae6db6f3a48ef6714afe58682f9a74e5e"
+    },
+    {
+      "path": "loopprompts/grainy-pocket-beats-27.md",
+      "bytes": 2500,
+      "sha256": "ec8bae46ecb7729a5f9888467e53afecf9401e726cd933d1d4cc6a55fabd1fd9"
+    },
+    {
+      "path": "loopprompts/honey-wooden-soul-37.md",
+      "bytes": 1952,
+      "sha256": "f59a58597064c26ed86e35fdfb7458ebdf1a2e7f6db778bd6aecd604e6763341"
+    },
+    {
+      "path": "loopprompts/indigo-velvet-soul-33.md",
+      "bytes": 1954,
+      "sha256": "3954c141d35c3c1411e8d02f2c5e5a3f809d1b9e9fcb5c05602c6245868b3ec2"
+    },
+    {
+      "path": "loopprompts/iron-borough-bass-24.md",
+      "bytes": 2359,
+      "sha256": "e03379cfbf5e3f8fdce926bc7d239f78345d4663699e063bf28ff41a74a9be2e"
+    },
+    {
+      "path": "loopprompts/iron-thunder-drums-46.md",
+      "bytes": 2564,
+      "sha256": "8545d1134721ae61af8463e3dd6ddf89f0f06da06ce20bef683f73a5fe0d08da"
+    },
+    {
+      "path": "loopprompts/loose-amber-jazz-48.md",
+      "bytes": 1967,
+      "sha256": "548132a383ca1a900f653a44e80284ba31892b8128b4af5ae06414c866157de6"
+    },
+    {
+      "path": "loopprompts/midnight-garage-bounce-06.md",
+      "bytes": 1934,
+      "sha256": "21b0d79ec2df166ac49bc7a4133073995f073fcde5e793b98bf51c912baeada2"
+    },
+    {
+      "path": "loopprompts/molten-alloy-rhythm-22.md",
+      "bytes": 2418,
+      "sha256": "7cb2f00be675e28ab50b11f01b5d4908666fc6f2c6b0a216bc9117935c5570d1"
+    },
+    {
+      "path": "loopprompts/moss-crystal-rhythm-32.md",
+      "bytes": 2406,
+      "sha256": "f08ef5507209d965fb88f3566ffe73c28087b399d80a9a8cf4f2212653c424a0"
+    },
+    {
+      "path": "loopprompts/neon-borough-bounce-40.md",
+      "bytes": 2366,
+      "sha256": "185e8cc7773c6381c984bf67a1230e291a5d223c4fb2869e91667ff419da63ed"
+    },
+    {
+      "path": "loopprompts/neon-circuit-funk-01.md",
+      "bytes": 2371,
+      "sha256": "c2fdda418d844a4efe10714d04cfad66a781185f74fc10172302f7088f6cc7f3"
+    },
+    {
+      "path": "loopprompts/nocturnal-glass-soul-50.md",
+      "bytes": 1944,
+      "sha256": "1d95779bbff3162f5f7c5436c10cb63120c35dcfb2add19955ef7b07e63389f1"
+    },
+    {
+      "path": "loopprompts/pastel-bedroom-glow-30.md",
+      "bytes": 1940,
+      "sha256": "dee1285b696de6de5540b74d86d7e93121df78015b04fd51dc6f90daaf705f80"
+    },
+    {
+      "path": "loopprompts/pixel-fracture-groove-44.md",
+      "bytes": 2485,
+      "sha256": "e3ad05c96c4381aed3d6f1a25f17ebd23dd9fc525a74ebc8bbb8a0aff2299ddc"
+    },
+    {
+      "path": "loopprompts/satin-radio-bounce-42.md",
+      "bytes": 1938,
+      "sha256": "527f96b42e28f5bbf5fa0981895d2733529d9f5d13581848c615d26fa23582aa"
+    },
+    {
+      "path": "loopprompts/shadow-bell-trap-07.md",
+      "bytes": 1904,
+      "sha256": "298d52c8ff150298f89e7fa91152ea392ab32fc0d59f1e5cc80b56c0c27ac0fa"
+    },
+    {
+      "path": "loopprompts/silver-current-breaks-36.md",
+      "bytes": 1983,
+      "sha256": "5bfe7dcc343b80e9de17abc128befcbbbdda9a1092b9cb8aef818f0367b8bf96"
+    },
+    {
+      "path": "loopprompts/soft-horizon-house-23.md",
+      "bytes": 1935,
+      "sha256": "fd891d005902b99e7ba38d460ce2fc39776a8e03ad8b32da84648efa72c12342"
+    },
+    {
+      "path": "loopprompts/solar-anthem-house-25.md",
+      "bytes": 2407,
+      "sha256": "9ff39cfd974177ee1c378460677e0e9cbd1055878c65a63953352a339e2a5320"
+    },
+    {
+      "path": "loopprompts/steel-groove-house-09.md",
+      "bytes": 2359,
+      "sha256": "d841ab2f0de9ecd775815de94949078140a7bab65dfc9e1a536c941509b6cc8b"
+    },
+    {
+      "path": "loopprompts/subterranean-dub-house-15.md",
+      "bytes": 2351,
+      "sha256": "89f8035d13a736a338dff6114a47d2cd7d0a2fcaec502b872be2b236a1aba831"
+    },
+    {
+      "path": "loopprompts/summit-percussion-drive-29.md",
+      "bytes": 2402,
+      "sha256": "66ef6d9901f2f88c6dc64a20e03c4d54d3ad6fb9fdcf6f4d9c97d6fa2fd4ed94"
+    },
+    {
+      "path": "loopprompts/sunset-boulevard-bounce-11.md",
+      "bytes": 1923,
+      "sha256": "329f299d4a57a40fb1de5348d9e45f19a1dde5bc5a8a2dd4e4a8a802401a71f9"
+    },
+    {
+      "path": "loopprompts/titan-pulse-drums-02.md",
+      "bytes": 2515,
+      "sha256": "445ab2e2bb5d29b74250efe639ee105c4a9d61a69357bed6bacd33cc157d419b"
+    },
+    {
+      "path": "loopprompts/uptown-piano-house-49.md",
+      "bytes": 1959,
+      "sha256": "760c1c75b8cc9653b601490f2ca6f758e4e1fd93b86178588f27cf972cc1620e"
+    },
+    {
+      "path": "loopprompts/velvet-ember-soul-08.md",
+      "bytes": 1944,
+      "sha256": "13e63ec7be7f2c24cf3cf6d4f8a757d86911097d2b682ef6afd14d50c1a08dc5"
+    },
+    {
+      "path": "loopprompts/velvet-shuffle-house-04.md",
+      "bytes": 2369,
+      "sha256": "328459cfe7245a9a278dee105fa303ed2dce42cca0ccfac4f28d987d042f6358"
+    },
+    {
+      "path": "loopprompts/violet-echo-voices-18.md",
+      "bytes": 2381,
+      "sha256": "e9be68fecab652902c2adb5a69d7cc521389d65d193af14b13e651753a7bd4ba"
+    },
+    {
+      "path": "loopprompts/voltage-halo-trap-20.md",
+      "bytes": 1925,
+      "sha256": "9f39a6b8c1d8772fceccaa196263c8a5662997af4603a63f84cd10de8e79aa48"
+    },
+    {
+      "path": "loopprompts/willow-string-reverie-39.md",
+      "bytes": 2397,
+      "sha256": "e7f55640936a241aa4a0ac126c1d39d89196006f9c8bb5bd79d5e687b322135b"
+    },
+    {
+      "path": "run_desktop.bat",
+      "bytes": 328,
+      "sha256": "4ae2e069dfb7bee904a61431ec7a561acee84129ede364206f8c4efd116dd215"
+    },
+    {
+      "path": "run_normal.bat",
+      "bytes": 707,
+      "sha256": "9fb208d974eabbf9ba87a0d63c496abf93777550d8425b9a6d8f1fc4b0de48da"
+    },
+    {
+      "path": "run_server.bat",
+      "bytes": 1022,
+      "sha256": "8936405f746c370b51ca404230332318117fabe8c5727093003d8ed0dde05ec1"
+    },
+    {
+      "path": "scripts/download_models.py",
+      "bytes": 6047,
+      "sha256": "d1161668172882ffe1c5b24764f81aff3d04c065c3949f17c04d1d5e915c6517"
+    },
+    {
+      "path": "setup.bat",
+      "bytes": 3296,
+      "sha256": "4a4b5e4fa4ecede1c970be3aaf9bf30a96ca8ddfe3b7daab16e1a36a23f5ce09"
+    },
+    {
+      "path": "stable-audio-3/.gitignore",
+      "bytes": 513,
+      "sha256": "ea06848f761bb323ce0dc57841dd2d7afef1be67fbc200ac3d12d07fe8332ecb"
+    },
+    {
+      "path": "stable-audio-3/.python-version",
+      "bytes": 6,
+      "sha256": "2c6bb7b4a0cc70e45e866dc579bec9f0b5c843c42fd6ed7391df7f5cd7859f14"
+    },
+    {
+      "path": "stable-audio-3/LICENSE",
+      "bytes": 1090,
+      "sha256": "0354ba6c8680ead1b06a2dbe30d164a830d50a62969b44146dfc13ddd199d0b3"
+    },
+    {
+      "path": "stable-audio-3/README.md",
+      "bytes": 13084,
+      "sha256": "9e0b301ef023a4e158db3d4e48ba29a30cf7865460f5337f7ddfa598dcdd41ca"
+    },
+    {
+      "path": "stable-audio-3/docs/guides/gradio.png",
+      "bytes": 32260,
+      "sha256": "76506e5d26d194c769c9539e2e283256e9c2d5ba581a0b3cb4b1c444786348c7"
+    },
+    {
+      "path": "stable-audio-3/docs/guides/model-overview.md",
+      "bytes": 7800,
+      "sha256": "5d0c391addb2812f331b5f005af9731ef9fd13f4b3ce97bb89af37cfa3077a12"
+    },
+    {
+      "path": "stable-audio-3/docs/guides/prompting.md",
+      "bytes": 10254,
+      "sha256": "96b5a0957f1c2abacfc7e84cc68a05915d557c74909477072b94aa8ca1b44061"
+    },
+    {
+      "path": "stable-audio-3/docs/guides/stable-audio-3.png",
+      "bytes": 54221,
+      "sha256": "f6a4837d31b6679896bb50322ea6ee5e072b31dbeddead35d2266cddc6bf5f89"
+    },
+    {
+      "path": "stable-audio-3/docs/guides/training-stages.png",
+      "bytes": 23842,
+      "sha256": "ee7d7f90996f225bee77a799dde05ddb745ed4dca1ca86539e7940775b63a13a"
+    },
+    {
+      "path": "stable-audio-3/docs/workflows/autoencoder.md",
+      "bytes": 4123,
+      "sha256": "a5479dea14d8b3e96a654f56f43635e20fd820b2c7fe3ebe626a5c58bb2ffaa2"
+    },
+    {
+      "path": "stable-audio-3/docs/workflows/inference.md",
+      "bytes": 9318,
+      "sha256": "c4fbfdacf8d9d30e085e9a8dee2f04c2a6018b1be276a3a0daf2c36d9f759dd8"
+    },
+    {
+      "path": "stable-audio-3/docs/workflows/lora.md",
+      "bytes": 18455,
+      "sha256": "2fe2c5f0d9a8cfe31587ff40a6dd66ec7399ef8e66e16927eb72c7961ebc507a"
+    },
+    {
+      "path": "stable-audio-3/pyproject.toml",
+      "bytes": 1573,
+      "sha256": "94d0d64edc16d7525e391ce3a93a9bc1dbd5482af3e4c40a8e72787b106ed2c3"
+    },
+    {
+      "path": "stable-audio-3/run_gradio.py",
+      "bytes": 3546,
+      "sha256": "ff5285f5db1bd346cfd6ee2139d4fce77df1a04dc12d5f915c4745440f2e47d8"
+    },
+    {
+      "path": "stable-audio-3/scripts/localize_models.py",
+      "bytes": 1897,
+      "sha256": "9832e4a173577f48973cec0c0fc5483ed2342bfeab64a5df51c41704281ed58f"
+    },
+    {
+      "path": "stable-audio-3/scripts/pre_encode_dataset.py",
+      "bytes": 5429,
+      "sha256": "2c4519bf913ddddbcc02a35e1dfdd31bd9d91ac57bd7f9f97899e826bad655d6"
+    },
+    {
+      "path": "stable-audio-3/scripts/train_lora.py",
+      "bytes": 13175,
+      "sha256": "0d0ba8faa9c7601a0737ca336efed32b7ab2d99b70057b557f3a88f8fbb635a0"
+    },
+    {
+      "path": "stable-audio-3/stable-audio-3.png",
+      "bytes": 54221,
+      "sha256": "f6a4837d31b6679896bb50322ea6ee5e072b31dbeddead35d2266cddc6bf5f89"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/__init__.py",
+      "bytes": 142,
+      "sha256": "20a79d42e11ace71b7b3be01c77585a6bef0872d111d7f0a674af5c3a7c6801b"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/cli.py",
+      "bytes": 9054,
+      "sha256": "d7ad363d65032614621cd815121517cc97292731f23edc22a6135e8238759f77"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/data/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/data/dataset.py",
+      "bytes": 20090,
+      "sha256": "ae1d31fe49237b033c41517d739acd6cf9b50fa10e291c98743ea91b75ad4a35"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/data/utils.py",
+      "bytes": 9428,
+      "sha256": "ad806d128abe656ff557347cbda8de285da6cb40bd8ca7a1711ff0793e8861aa"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/factory.py",
+      "bytes": 6307,
+      "sha256": "66ee42d42c67afa9f8fdb7489478f69b39e6d38b9f03c46ad27e5351c3d40d44"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/inference/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/inference/audio_utils.py",
+      "bytes": 3139,
+      "sha256": "423110fc60087d89ad1768363c05637aaa173e6fb3b93c42656f084e16deba21"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/inference/distribution_shift.py",
+      "bytes": 9178,
+      "sha256": "9dafb7cd2860455f11dcb27be7e47cf4d0e6e338df1092b79db6bfa67a7ea8e1"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/inference/sampling.py",
+      "bytes": 29110,
+      "sha256": "244b40b5777deab5a2f2e81ff0e16250998a81e0d7b39a1ed46a0238744d3545"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/interface/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/interface/aeiou.py",
+      "bytes": 14980,
+      "sha256": "59e37f114d89cc8da5a1b110536a087bf686f578df0a4bfdf54e2d9876d3d8fb"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/interface/diffusion_cond.py",
+      "bytes": 34244,
+      "sha256": "a3fbaa6896815c4f52d850b5ed54bcbe0f4c054fd3145597fca0a96483b006f6"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/interface/reprompt.py",
+      "bytes": 39595,
+      "sha256": "adc836d648d3a972b683c4c16cb9110828b950f3b9dc0ec17676b52ef8fbd73d"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/loading_utils.py",
+      "bytes": 5399,
+      "sha256": "c7bc412b7f883099ecc344ff6590c500209b9f843e6b43523e890d36a9e1b6b4"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/model.py",
+      "bytes": 32106,
+      "sha256": "b9e776cceef02b1cd99dc37050fb1df6de3e8283acaaa4e7c866473ff7d97a82"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/model_configs.py",
+      "bytes": 7060,
+      "sha256": "b76aff62a5baab3071e2eb23e27aeb27c7de8792960f9f3c522752f4c9e06313"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/autoencoders.py",
+      "bytes": 32249,
+      "sha256": "277488bf154cd65639cca316c2120bbbb8d398c2498bed81712f996173be3020"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/blocks.py",
+      "bytes": 2604,
+      "sha256": "3cac9006d296170a7a2604d60588048d029823b077b815e46f04d33826b51e2b"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/bottleneck.py",
+      "bytes": 2683,
+      "sha256": "de38ce46848ac383feefcc5226b66f4291d5b5678feeaa4f8e26dc76583340f0"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/conditioners.py",
+      "bytes": 13766,
+      "sha256": "93e78311a180c68564140d60b87bacc399a95e1ed874c25eaa8ddaa60d2855b3"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/diffusion.py",
+      "bytes": 10804,
+      "sha256": "3dded32ee8027e20d90e7515f7c3bb40e7af2dc5d785484b9fcd69186771b19c"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/dit.py",
+      "bytes": 27749,
+      "sha256": "f0e36880a9c3e6f8273b4f1a8c38ecb439b494d48a2890d0dcacb01c55decdad"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/inpainting.py",
+      "bytes": 10802,
+      "sha256": "f0571efab6e31c33593b407eb21b1f9825ff10f281d7664207d40ab94f6a5736"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/lora/__init__.py",
+      "bytes": 769,
+      "sha256": "741c57e98390b28aa9e7d260e1d6ac6aec3d997186b59ee803fc4ba1b37909c4"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/lora/loader.py",
+      "bytes": 5218,
+      "sha256": "cbf79d112154ff02f73f4b55d8757b0aa507c8bc0192499bc629aa06dbdcc100"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/lora/model.py",
+      "bytes": 24031,
+      "sha256": "b75a041e392a23213e2240d45dc567337cea4a5554a1261156b2ae7e3b2eb241"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/lora/utils.py",
+      "bytes": 16245,
+      "sha256": "33bccd00b7f3b632838b34ffb85bc10cfc7a1e0cbb5d5acebe6c439629576668"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/pretransforms.py",
+      "bytes": 3489,
+      "sha256": "d8fbc321ae34a32682419a8a0790d0908210b703a91c4d88159b07e2a10d2c8d"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/transformer.py",
+      "bytes": 51722,
+      "sha256": "21954dd54aab06532f1630ecc1ed9d32c078407e0cd9eba581cecd9f2e50cda4"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/models/utils.py",
+      "bytes": 802,
+      "sha256": "e44946ed8867265450a3346167a35c5acb424d1a39004e49ee6bb389c59b32cf"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/training/diffusion.py",
+      "bytes": 57669,
+      "sha256": "7060e0252089cf7af3021170698eaa4773328c04f42bba90a3cb9723a6be7519"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/training/utils.py",
+      "bytes": 20387,
+      "sha256": "d62dd8c2b045667c38a9aff3e6980cc06300aa54e568ee4a33e5f76b6107058c"
+    },
+    {
+      "path": "stable-audio-3/stable_audio_3/verbose.py",
+      "bytes": 574,
+      "sha256": "1be65a54dadd534fde6498af4f5973aad202cbba079369d8aa7a7a0b84d6f058"
+    },
+    {
+      "path": "stable-audio-3/tests/conftest.py",
+      "bytes": 5364,
+      "sha256": "b591241d5ea1ab00c6e54a28bb2a2da962f79364e17f059980b97a7f5ee51f17"
+    },
+    {
+      "path": "stable-audio-3/tests/test_autoencoder.py",
+      "bytes": 3808,
+      "sha256": "b97fedb4c85baac5302594c19e6c55c8ea8aa0069358cba23a2c208eec70d188"
+    },
+    {
+      "path": "stable-audio-3/tests/test_cli.py",
+      "bytes": 14144,
+      "sha256": "aedc805e109d4f4a6076f310a697519dfd7914a14da706779c52028a6bb03967"
+    },
+    {
+      "path": "stable-audio-3/tests/test_duration_conditioning.py",
+      "bytes": 1089,
+      "sha256": "b1e2f9fd23ffdd8d378986af3dad6147200dc895404c08c9f8c9c3964798cfb8"
+    },
+    {
+      "path": "stable-audio-3/tests/test_inference.py",
+      "bytes": 8584,
+      "sha256": "6bb6c88183009fbaa396d4bc08c029eac3afb5af5767b2b61ae7244ccf76fa63"
+    },
+    {
+      "path": "stable-audio-3/tests/test_lora.py",
+      "bytes": 2322,
+      "sha256": "bd21c74f7b845060cb893c4e1afca37eb02dda1dbb1e49fdf4872f3cb0793ab9"
+    },
+    {
+      "path": "stable-audio-3/tests/test_model_configs.py",
+      "bytes": 6249,
+      "sha256": "6679cb7c657d39afed0559a9a3cca4f3a997d87452741c750963d706be6c883f"
+    },
+    {
+      "path": "stable-audio-3/tests/test_runtime_memory.py",
+      "bytes": 6776,
+      "sha256": "c8719b2b7c91529b7168235dfaccc686f992d2d5a4496d9af825a7ffea40c742"
+    },
+    {
+      "path": "stable-audio-3/tests/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stable-audio-3/tests/utils/audio.py",
+      "bytes": 1769,
+      "sha256": "1c794632aae0d81302ed756cb3c573b47631b10a2229e038ae5dd8877eb728ec"
+    },
+    {
+      "path": "stable-audio-3/uv.lock",
+      "bytes": 793323,
+      "sha256": "8fd8268e62210bd4dccb10d70c0101ebb0bdfebce373729f22413616c93d626c"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Environments
+.env
+.venv
+env/
+venv/
+**/node_modules/
+
+# Caches
+.pytest_cache/
+.pytest_tmp/
+.mypy_cache/
+
+# IDE files
+.idea/
+.vscode/
+
+# Local logs and tunnels
+*.log
+localtunnel.log
+
+# Stable Audio model checkpoints and caches
+*.ckpt
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+.gradio/
+**/.gradio/
+.DS_Store
+
+# AI generated output files
+outputs/
+**/outputs/
+optimized/
+**/optimized/
+*.wav
+**/*.wav
+*.mp3
+**/*.mp3
+*.ogg
+**/*.ogg
+*.flac
+**/*.flac
+*.zip
+**/*.zip
+
+# Local AI workspace metadata
+.claude
+.gemini/
+.gstack/
+**/.claude
+**/.gemini/
+**/.gstack/
+
+# Constitution / Agent Rules
+AGENTS.md
+agents.md
+
+# AI / Agent workspace files
+HANDOFF.md
+handoff.md
+implementation.md
+implementation_plan.md
+task.md
+walkthrough.md
+
+# Temporary Redesign Skill Folder
+ui-ux-pro-max-skill/
+
+# User Captured Screenshots
+screenshots/
+loopmaster-desktop/output/skin-previews/
+output/skin-previews/
+.electron-profile/
+
+
+# Locally downloaded AI models
+/models/

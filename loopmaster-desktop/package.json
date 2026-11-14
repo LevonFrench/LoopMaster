@@ -1,0 +1,18 @@
+{
+  "name": "loopmaster-desktop",
+  "version": "1.0.0",
+  "description": "Electron launcher for LoopMaster",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "qa:frontend": "electron qa/frontend-qa.js",
+    "qa:skins": "electron qa/frontend-qa.js --capture-skins"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^42.4.1"
+  }
+}

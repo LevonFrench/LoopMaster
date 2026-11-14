@@ -1,0 +1,1823 @@
+{
+  "schema_version": 1,
+  "revision": "2026-09-20-named-loop-packs",
+  "packs": [
+    {
+      "file": "neon-circuit-funk-01.md",
+      "bpm": 124,
+      "key": "D minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.741935,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Electro-funk groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 124 BPM, 4/4, D minor. Driving nu-disco groove with a rounded overdriven synth bass, bright brass-like synth stabs and tight drum-machine backbeat. Short syncopated chords answer the bass; crisp hats keep the pulse, with warm console saturation. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Synth bass riff",
+          "prompt": "TrackType: Instrument, 124 BPM, 4/4, D minor. Solo analog synth bass playing a clipped sixteenth-note electro-funk riff. Octave jumps answer low root notes, with brief rests before the backbeat, a fast filter envelope and warm overdrive. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Retro drum groove",
+          "prompt": "TrackType: Instrument, 124 BPM, 4/4. Isolated retro drum-machine groove with a steady four-on-the-floor kick, gated snare on beats two and four and open hats on the offbeats. Dry attacks and a short room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Clavinet counter-rhythm",
+          "prompt": "TrackType: Instrument, 124 BPM, 4/4, D minor. Solo clavinet playing a wiry, syncopated disco-funk chord riff in the middle register. Muted sixteenth-note scratches alternate with short chord accents; subtle wah movement and a dry, lightly saturated tone. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, punchy electro snare drum one-shot with gated chamber reverb tail and warm harmonic overdrive, 2 seconds",
+          "number": 1
+        }
+      ],
+      "name": "Neon Circuit Funk 01",
+      "number": 1
+    },
+    {
+      "file": "titan-pulse-drums-02.md",
+      "bpm": 128,
+      "key": null,
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.5,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Festival drum groove",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated festival-house drum groove with a deep four-on-the-floor kick, layered claps on beats two and four and open offbeat hats. Firm attacks, short decays and an even, driving pulse. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Layered percussion groove",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated percussion ensemble combining low taiko pulses, alternating dhol strokes and a steady shaker. The large drums trade short phrases while the shaker holds the subdivision; compact room ambience. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Rolling tom groove",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated EDM tom groove with low toms answering high toms across a repeating syncopated pattern. Occasional snare ghost notes connect the phrases; controlled resonance and consistent intensity. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Shaker and tambourine tops",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated festival-house top percussion with alternating shaker sixteenths, bright tambourine offbeats and sparse woodblock answers. Light accents lift the groove; dry close detail, with the low register left open. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: Instrument, solo high-energy EDM drum fill with accelerating acoustic snare rolls, cascading toms, and crash cymbal turnaround, 128 BPM",
+          "number": 1
+        },
+        {
+          "prompt": "TrackType: SFX, massive festival EDM kick drum one-shot with sub-bass transient punch and crisp harmonic click, 2 seconds",
+          "number": 2
+        }
+      ],
+      "name": "Titan Pulse Drums 02",
+      "number": 2
+    },
+    {
+      "file": "concrete-pocket-trap-03.md",
+      "bpm": 140,
+      "key": "F minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 6.857143,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Trap drum groove",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4. Isolated hard-hitting trap drums with a short deep kick, sharp rimshot backbeat and tight closed hats. Brief triplet hat flurries answer the rimshot in a sparse half-time pocket; crunchy attacks. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Saturated 808 riff",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4, F minor. Solo 808 bass playing low sustained roots followed by quick octave slides. Clear gaps separate the phrases; rounded sub weight, audible upper harmonics and controlled saturation suit a half-time trap groove. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Found-sound percussion",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4. Isolated percussion groove built from wooden taps, papery shuffles and small metallic clicks. Uneven accents form a repeating syncopated pattern around a steady pulse; dry, intimate recording with light grit. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Muted bell hook",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4, F minor. Solo muted bell synthesizer playing a sparse trap hook with a low two-note question and a higher answering note. Rounded mallet attacks, short decays and a faint dark delay leave room around the phrase. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, punchy hard-clipped kick drum one-shot with instantaneous transient snap and deep sub knock, 1 second",
+          "number": 1
+        }
+      ],
+      "name": "Concrete Pocket Trap 03",
+      "number": 3
+    },
+    {
+      "file": "velvet-shuffle-house-04.md",
+      "bpm": 127,
+      "key": "G minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.559055,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Minimal deep-tech groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 127 BPM, 4/4, G minor. Hypnotic minimal deep-tech house groove with a tight kick, rubbery sub bass and muted chord stabs. Swung hats and tiny rim clicks frame a sparse call-and-response between bass and chords. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Rubbery bass riff",
+          "prompt": "TrackType: Instrument, 127 BPM, 4/4, G minor. Solo rounded analog bass synthesizer playing a syncopated deep-tech riff. Short low notes alternate with one sustained root, with a soft resonant filter pluck and gentle tube saturation. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Filtered chord stabs",
+          "prompt": "TrackType: Instrument, 127 BPM, 4/4, G minor. Solo analog polysynth playing short minor chord stabs in a swung house rhythm. Offbeat accents alternate with rests; restrained filter movement and a short dark room tail keep the chords compact. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Minimal percussion tops",
+          "prompt": "TrackType: Instrument, 127 BPM, 4/4. Isolated minimal-house percussion loop with shuffled closed hats, dry rim clicks and tiny pitched woodblock answers. Alternating strong and soft sixteenths create a loose pocket; the low register stays open. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, short resonant modular synth blip one-shot with fast pitch envelope decay and subtle analog noise, 1 second",
+          "number": 1
+        }
+      ],
+      "name": "Velvet Shuffle House 04",
+      "number": 4
+    },
+    {
+      "file": "chrome-motion-textures-05.md",
+      "bpm": 128,
+      "key": null,
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.5,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Pulsing noise rhythm",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Solo noise synthesizer playing a repeating festival-house rhythm of short filtered bursts. Bright offbeat swishes alternate with darker sixteenth-note pulses, with fast decays and a consistent filter cycle. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Rhythmic synth siren",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Solo electronic siren synthesizer repeating a short rising-and-falling pitch figure over a steady house pulse. Staccato gated notes and clipped tempo-synced echoes give the phrase a rhythmic shape. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Low brass-synth pulse",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Solo low brass synthesizer playing a repeating pattern of short resonant chord pulses. Rounded attacks, gritty midrange and small gaps between accents create steady cinematic tension, with tightly controlled room decay. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Metallic mallet rhythm",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Solo metallic mallet synthesizer playing a syncopated repeating sequence of tuned chimes. Alternating low and high notes form a compact hook; crisp attacks and short filtered echoes create a percussive shimmer. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, colossal festival EDM impact with explosive sub drop, crashing metallic debris, and cavernous reverb tail, 6 seconds",
+          "number": 1
+        },
+        {
+          "prompt": "TrackType: SFX, dramatic 8-bar pitch-rising synth riser with accelerating white noise sweeps and snare rolls building to a climax, 15 seconds",
+          "number": 2
+        },
+        {
+          "prompt": "TrackType: SFX, cinematic orchestral brass braam hit with aggressive distortion and decaying sub-harmonic rumble, 4 seconds",
+          "number": 3
+        },
+        {
+          "prompt": "TrackType: SFX, airy reverse cymbal swoosh transitioning into a crisp downbeat snap with ethereal wooden chimes, 3 seconds",
+          "number": 4
+        }
+      ],
+      "name": "Chrome Motion Textures 05",
+      "number": 5
+    },
+    {
+      "file": "midnight-garage-bounce-06.md",
+      "bpm": 135,
+      "key": "B minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.111111,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Speed-garage groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 135 BPM, 4/4, B minor. Bouncy speed-garage groove with a four-on-the-floor kick, warped bass and percussive organ chords. Shuffled hats and snare ghosts weave around the bass, with lively swing and tightly clipped chord attacks. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Garage organ chords",
+          "prompt": "TrackType: Instrument, 135 BPM, 4/4, B minor. Solo house organ playing a syncopated speed-garage chord riff. Short lower-register stabs answer brighter chord inversions, with a percussive attack, fast release and gentle tape warmth. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Warped garage bass",
+          "prompt": "TrackType: Instrument, 135 BPM, 4/4, B minor. Solo speed-garage bass synthesizer playing a bouncy syncopated riff with short pitch scoops. Rounded low notes alternate with nasal midrange accents; firm note endings preserve the rhythmic gaps. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Shuffled garage drums",
+          "prompt": "TrackType: Instrument, 135 BPM, 4/4. Isolated speed-garage drums with a firm four-on-the-floor kick, dry snare on two and four and shuffling closed hats. Soft snare ghosts lead into the backbeat; occasional open hats answer the bass pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Midnight Garage Bounce 06",
+      "number": 6
+    },
+    {
+      "file": "shadow-bell-trap-07.md",
+      "bpm": 136,
+      "key": "C# minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.058824,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Dark trap groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 136 BPM, 4/4, C# minor. Dark trap groove with a sparse bell motif, sliding 808 bass and crisp half-time drums. A dry clap anchors the backbeat while restrained hat rolls answer the melody; ominous space between phrases. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Dark bell motif",
+          "prompt": "TrackType: Instrument, 136 BPM, 4/4, C# minor. Solo low bell synthesizer repeating a spare minor-key motif with a higher answering note. Rounded metallic attacks, mild pitch drift and a short dark echo create an uneasy, spacious trap texture. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Sliding 808 bass",
+          "prompt": "TrackType: Instrument, 136 BPM, 4/4, C# minor. Solo saturated 808 bass repeating sustained low roots and short upward slides. The phrase follows a half-time trap pocket, with clear pauses, rounded sub weight and restrained buzzing harmonics. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Half-time trap drums",
+          "prompt": "TrackType: Instrument, 136 BPM, 4/4. Isolated half-time trap drums with a short punchy kick, dry clap on beat three and finely spaced closed hats. Brief triplet hat rolls lead into the clap; sparse snare ghosts add movement. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Shadow Bell Trap 07",
+      "number": 7
+    },
+    {
+      "file": "velvet-ember-soul-08.md",
+      "bpm": 85,
+      "key": "Eb major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 11.294118,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Soulful R&B groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 85 BPM, 4/4, Eb major. Intimate R&B groove with warm electric-piano seventh chords, clean guitar answers and rounded bass. Soft drums sit slightly behind the beat; light tremolo and close room ambience keep the arrangement gentle. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Electric-piano chords",
+          "prompt": "TrackType: Instrument, 85 BPM, 4/4, Eb major. Solo electric piano playing relaxed neo-soul seventh and ninth chords. Softly rolled voicings land just behind the beat, with small upper-note answers, slow tremolo and a warm lightly driven tone. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Clean guitar melody",
+          "prompt": "TrackType: Instrument, 85 BPM, 4/4, Eb major. Solo clean electric guitar playing a tender R&B motif in the middle register. Slides connect short melodic answers and gently picked double-stops; warm finger attack and a short plate tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Brushed R&B percussion",
+          "prompt": "TrackType: Instrument, 85 BPM, 4/4. Isolated R&B percussion groove with a brushed snare backbeat, soft shaker sixteenths and occasional fingertip conga taps. Relaxed swing and quiet ghost strokes create a supple pocket with an open low register. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Velvet Ember Soul 08",
+      "number": 8
+    },
+    {
+      "file": "steel-groove-house-09.md",
+      "bpm": 126,
+      "key": "F minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.619048,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "G-house groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 126 BPM, 4/4, F minor. Heavy G-house groove with a short four-on-the-floor kick, syncopated FM bass and dry claps. Tight hats carry the pulse while clipped midrange bass accents answer the kick; gritty, controlled saturation. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "FM bass stabs",
+          "prompt": "TrackType: Instrument, 126 BPM, 4/4, F minor. Solo FM bass synthesizer playing a syncopated G-house riff. Short low notes alternate with hollow metallic accents; sharp filter envelopes and brief rests make the groove punchy and spacious. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Tech-house drums",
+          "prompt": "TrackType: Instrument, 126 BPM, 4/4. Isolated tech-house drums with a firm four-on-the-floor kick, snappy clap on two and four and crisp open offbeat hats. Light closed-hat pickups add forward movement; dry, defined transients. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Clipped synth chord hook",
+          "prompt": "TrackType: Instrument, 126 BPM, 4/4, F minor. Solo hollow wavetable synthesizer playing a repeating G-house chord hook. Two short offbeat stabs answer a longer muted chord; narrow filter movement and clipped room reflections leave room for the bass. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, short FM synth laser zap one-shot with fast downward pitch modulation and aggressive distortion, 1 second",
+          "number": 1
+        }
+      ],
+      "name": "Steel Groove House 09",
+      "number": 9
+    },
+    {
+      "file": "dusty-ribbon-breaks-10.md",
+      "bpm": 88,
+      "key": null,
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 10.909091,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Tape breakbeat",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4. Isolated acoustic funk drum break with a warm kick, ghost-note snare and gently swung ride. The snare sits slightly late against a steady pulse; close drum detail and soft tape saturation. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Open-hat funk groove",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4. Isolated acoustic funk drums with syncopated kick notes, a dry snare backbeat and brief open-hat lifts. Quiet snare drags connect the accents; warm tape compression with natural dynamic variation. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Tom-led break",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4. Isolated vintage drum-kit groove built around repeating low-tom and snare exchanges. A restrained kick marks the pulse and closed hats keep time; short resonances and warm, rounded attacks. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Tambourine and hand-drum groove",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4. Isolated soul percussion with a loose tambourine backbeat, steady soft shaker and muted conga replies. Gentle swing and uneven hand-played accents sit behind the pulse; close recording with light tape warmth. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: Instrument, solo dynamic acoustic drum fill rolling across vintage toms into a crashing downbeat, 88 BPM",
+          "number": 1
+        },
+        {
+          "prompt": "TrackType: SFX, vintage acoustic snare drum one-shot with natural ghost wire buzz and warm tape saturation, 2 seconds",
+          "number": 2
+        }
+      ],
+      "name": "Dusty Ribbon Breaks 10",
+      "number": 10
+    },
+    {
+      "file": "sunset-boulevard-bounce-11.md",
+      "bpm": 100,
+      "key": "G minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 9.6,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "West Coast groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 100 BPM, 4/4, G minor. Bouncy West Coast hip-hop groove with a gliding synth lead, muted funk bass and dry claps. Sparse hats and short chord accents leave space around the bass; warm low end and a relaxed pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Portamento lead hook",
+          "prompt": "TrackType: Instrument, 100 BPM, 4/4, G minor. Solo analog lead synthesizer playing a relaxed high-register funk melody. Short notes slide into held tones, with gentle vibrato and a rounded resonant filter; spaces between phrases emphasize the bounce. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Muted funk bass",
+          "prompt": "TrackType: Instrument, 100 BPM, 4/4, G minor. Solo fingerstyle electric bass playing a clipped, syncopated West Coast groove. Low roots alternate with octave pops and muted ghost notes; round low end, clean attacks and restrained sustain. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "West Coast drum pocket",
+          "prompt": "TrackType: Instrument, 100 BPM, 4/4. Isolated hip-hop drums with a short kick, dry claps on two and four and sparse closed hats. A late rim click answers every second backbeat; light hat swing and tight decays keep the bounce open. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Sunset Boulevard Bounce 11",
+      "number": 11
+    },
+    {
+      "file": "frozen-skyline-trap-12.md",
+      "bpm": 128,
+      "key": "F minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.5,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Atmospheric trap groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 128 BPM, 4/4, F minor. Cold, spacious trap groove with low-pass piano chords, sustained 808 roots and sparse half-time drums. A quiet upper piano motif answers the bass; soft ambience sits behind clear, close drum attacks. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Filtered piano chords",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, F minor. Solo grand piano playing sparse minor chords and a small upper-register answering motif. Soft hammer attacks, muted high frequencies and a short dark room tail create a restrained late-night mood. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Sustained 808 roots",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, F minor. Solo rounded 808 bass playing long low roots with brief higher pickups. The phrase leaves open space around a half-time backbeat; smooth decays and faint saturation make the notes clear. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Sparse rimshot drums",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated half-time trap drums with a compact kick, woody rimshot on beat three and delicate closed-hat pairs. A brief hat roll closes the repeating phrase; dry low end and a small dark room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Frozen Skyline Trap 12",
+      "number": 12
+    },
+    {
+      "file": "golden-sunday-soul-13.md",
+      "bpm": 78,
+      "key": "Ab major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 12.307692,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Vintage soul groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 78 BPM, 4/4, Ab major. Warm vintage soul groove with piano chords, lyrical strings, soft horn answers and a restrained rhythm section. A gently swaying pocket supports the melody; rounded tape tone and intimate ensemble balance. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Soul piano progression",
+          "prompt": "TrackType: Instrument, 78 BPM, 4/4, Ab major. Solo upright piano playing a gently swaying soul chord progression with close seventh-chord voicings. Small gospel-style passing notes connect the chords; audible hammer texture and soft tape warmth. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Lyrical string phrase",
+          "prompt": "TrackType: Instrument, 78 BPM, 4/4, Ab major. Isolated small string ensemble playing a repeating lyrical soul phrase. Warm legato upper strings answer held lower harmonies, with restrained vibrato, gentle bow attacks and a compact studio-room sound. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Muted soul guitar",
+          "prompt": "TrackType: Instrument, 78 BPM, 4/4, Ab major. Solo clean electric guitar playing a lilting soul accompaniment with muted chord scratches and small double-stop answers. Lightly swung accents, rounded finger attack and subtle tremolo complement a warm piano-led groove. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Golden Sunday Soul 13",
+      "number": 13
+    },
+    {
+      "file": "frayed-heart-trap-14.md",
+      "bpm": 150,
+      "key": "E minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 6.4,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Guitar-led emo-trap groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 150 BPM, 4/4, E minor. Tense emo-trap groove with overdriven guitar chords, fuzzy 808 bass and half-time drums. Short ringing guitar phrases alternate with tighter palm-muted strokes; crisp hats cut through the warm distortion. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Chorus guitar chords",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4, E minor. Solo overdriven electric guitar repeating a melancholic post-punk chord figure. Open-string voicings alternate with palm-muted strums; slow chorus and a short room tail preserve the picking rhythm. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Fuzzy 808 riff",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4, E minor. Solo distorted 808 bass playing sustained low roots and brief octave slides. Soft-edged fuzz adds a grainy midrange above the sub; distinct rests give the half-time phrase room to breathe. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Punk-trap drum hybrid",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4. Isolated hybrid drum groove with a live snare on the half-time backbeat, short electronic kicks and tightly programmed hats. Quiet acoustic snare pickups answer brief hat rolls; punchy room compression with controlled tails. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Frayed Heart Trap 14",
+      "number": 14
+    },
+    {
+      "file": "subterranean-dub-house-15.md",
+      "bpm": 127,
+      "key": "C minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.559055,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Sparse deep-tech groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 127 BPM, 4/4, C minor. Dark minimal house groove with a rounded sub bass, tight kick and short resonant bleeps. Dry hats and woodblock accents form a gently swung pulse; bass and bleeps alternate in a sparse repeating phrase. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Rolling sub bass",
+          "prompt": "TrackType: Instrument, 127 BPM, 4/4, C minor. Solo analog sub-bass synthesizer repeating a low syncopated house riff. Short rounded notes lead into a held root; a soft filter envelope and subtle saturation make the rhythm clear. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Minimal drum pocket",
+          "prompt": "TrackType: Instrument, 127 BPM, 4/4. Isolated minimal-house drum groove with a short four-on-the-floor kick, dry rim backbeat and muted hats. Small woodblock pickups fall between the main beats; compact transients and understated swing. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Dub chord loop",
+          "prompt": "TrackType: Instrument, 127 BPM, 4/4, C minor. Solo analog polysynth playing dark, muted dub-house chords in the middle register. Sparse offbeat stabs carry short filtered echoes that answer the next chord; soft attack and a tight low-mid tone. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, micro-percussion wood click one-shot with fast transient snap and dry acoustic space, 1 second",
+          "number": 1
+        }
+      ],
+      "name": "Subterranean Dub House 15",
+      "number": 15
+    },
+    {
+      "file": "faded-cassette-dreams-16.md",
+      "bpm": 82,
+      "key": "F# minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 11.707317,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Lo-fi tape groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 82 BPM, 4/4, F# minor. Hazy lo-fi hip-hop groove with softly detuned electric piano, muted bass and a loose acoustic drum break. Lazy snare placement supports drifting upper notes; gentle cassette flutter and restrained tape grain. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Wavering electric piano",
+          "prompt": "TrackType: Instrument, 82 BPM, 4/4, F# minor. Solo electric piano repeating a dreamy minor chord progression with small upper-note embellishments. Soft attacks, slow pitch drift and muted highs create a worn cassette tone while preserving the chord changes. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Loose acoustic break",
+          "prompt": "TrackType: Instrument, 82 BPM, 4/4. Isolated acoustic drum break with a soft kick, slightly late snare and uneven swung hats. Quiet snare ghosts connect the accents; rounded tape compression and close room detail retain the human pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Worn guitar counter-melody",
+          "prompt": "TrackType: Instrument, 82 BPM, 4/4, F# minor. Solo clean electric guitar playing a sparse lo-fi counter-melody with fingerpicked double-stops and gentle slides. A low repeated note answers the upper phrase; soft chorus, muted highs and light tape flutter. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, cassette tape stop effect with sudden pitch drag and noisy motor grind, 2 seconds",
+          "number": 1
+        }
+      ],
+      "name": "Faded Cassette Dreams 16",
+      "number": 16
+    },
+    {
+      "file": "electric-satin-funk-17.md",
+      "bpm": 120,
+      "key": "A minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 8.0,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Polished electro-funk groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 120 BPM, 4/4, A minor. Bright electro-funk groove with polyphonic synth stabs, springy slap bass and tight drum-machine drums. Short chord answers leave the bass exposed; crisp attacks, warm harmonics and a buoyant disco pulse. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Polyphonic funk stabs",
+          "prompt": "TrackType: Instrument, 120 BPM, 4/4, A minor. Solo analog polysynth playing short syncopated funk chords. Lower stabs answer brighter upper inversions, with a fast filter pluck, gentle chorus and tidy note releases. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Slap bass groove",
+          "prompt": "TrackType: Instrument, 120 BPM, 4/4, A minor. Solo electric slap bass repeating a springy disco-funk riff. Thumbed low notes alternate with octave pops and muted ghost strokes; tight sustain, bright string attack and warm low-mid body. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Disco drum-machine groove",
+          "prompt": "TrackType: Instrument, 120 BPM, 4/4. Isolated vintage drum-machine groove with a solid four-on-the-floor kick, crisp snare on two and four and alternating open and closed hats. Soft handclap doubles and quiet shaker notes add a light disco lift. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Electric Satin Funk 17",
+      "number": 17
+    },
+    {
+      "file": "violet-echo-voices-18.md",
+      "bpm": 128,
+      "key": "D minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.5,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Ornamented wordless melody",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, D minor. Solo wordless female voice singing a repeating minor-key melody with fluid slides and small ornamental turns. Open vowel tones, gentle breath detail and short phrase endings, with a restrained dark room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Vocal chop hook",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, D minor. Isolated pitched vocal chops repeating a syncopated minor-key hook. Short open-vowel fragments alternate with lower answering tones; clean edits, clear rests and brief tempo-synced echoes define the rhythm. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Wordless choir harmony",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, D minor. Isolated wordless choir repeating a slow minor chord sequence on rounded vowel tones. Lower held harmonies support a gently moving upper voice; even dynamics and compact hall ambience keep the phrase contained. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Hummed rhythmic ostinato",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, D minor. Solo wordless humming voice repeating a soft, syncopated three-note motif. Closed-mouth tones alternate with short breathy vowel answers, with gentle pitch slides, close detail and a small room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, energetic festival crowd hype shout one-shot with stereo room ambience, 2 seconds",
+          "number": 1
+        }
+      ],
+      "name": "Violet Echo Voices 18",
+      "number": 18
+    },
+    {
+      "file": "astral-tide-wave-19.md",
+      "bpm": 138,
+      "key": "G# minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 6.956522,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Atmospheric wave groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 138 BPM, 4/4, G# minor. Airy wave-trap groove with glassy synth plucks, softly moving pads and sliding 808 bass. Crisp half-time drums hold the pulse beneath spacious melodic answers; warm sub weight and restrained shimmering ambience. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Glassy pluck motif",
+          "prompt": "TrackType: Instrument, 138 BPM, 4/4, G# minor. Solo wavetable pluck synthesizer repeating a wistful arpeggiated motif. Bell-like upper notes answer a lower anchor, with rounded attacks and short filtered echoes that leave the rests audible. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Gliding wave bass",
+          "prompt": "TrackType: Instrument, 138 BPM, 4/4, G# minor. Solo 808 bass repeating sustained low notes and smooth upward slides. Sparse pickups lead into the roots; warm harmonic grit and clear phrase gaps suit a spacious half-time wave groove. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Airy wave-trap drums",
+          "prompt": "TrackType: Instrument, 138 BPM, 4/4. Isolated half-time drum groove with a tight kick, airy snare on beat three and softly shuffled closed hats. A short hat flutter answers occasional rim ghosts; crisp attacks and restrained room ambience. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Astral Tide Wave 19",
+      "number": 19
+    },
+    {
+      "file": "voltage-halo-trap-20.md",
+      "bpm": 150,
+      "key": "C minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 6.4,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Rage-trap groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 150 BPM, 4/4, C minor. Energetic rage-trap groove with a bright repeating supersaw hook, saturated 808 bass and sharp half-time drums. Brief melodic gaps expose the bass slides; tight hats add motion beneath the sustained synth tone. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Supersaw hook",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4, C minor. Solo supersaw synthesizer repeating a compact anthemic minor-key melody. A held upper note answers a short descending figure, with bright detuned harmonics, firm attacks and restrained release. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Distorted 808 phrase",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4, C minor. Solo saturated 808 bass playing short low pulses, one longer root and a quick octave slide. Buzzing upper harmonics ride above a rounded sub; clear gaps keep the riff rhythmically defined. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Rage-trap drum loop",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4. Isolated half-time rage-trap drums with clipped kicks, a dry clap on beat three and tight closed hats. Brief double-time hat bursts alternate with open spaces; small snare pickups keep the phrase moving. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Voltage Halo Trap 20",
+      "number": 20
+    },
+    {
+      "file": "amber-string-trap-21.md",
+      "bpm": 140,
+      "key": "B minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 6.857143,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Acoustic melodic-trap groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 140 BPM, 4/4, B minor. Melodic trap groove with fingerpicked acoustic guitar, soft background pads and rounded 808 bass. Restrained half-time drums support a repeating guitar motif; intimate string detail and warm, lightly saturated tone. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Fingerpicked guitar motif",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4, B minor. Solo steel-string acoustic guitar repeating a wistful arpeggiated melody. Low thumb notes anchor small upper-string answers, with gentle slides, natural finger noise and a short warm room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Rounded 808 motif",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4, B minor. Solo 808 bass repeating a relaxed minor-key phrase of low roots and short passing notes. Smooth decays, restrained slides and gentle saturation leave space around a half-time backbeat. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Soft trap percussion groove",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4. Isolated melodic-trap drums with a rounded short kick, soft clap on beat three and lightly swung hats. Dry rim ghosts and a brief shaker answer add detail without crowding the acoustic melody. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Amber String Trap 21",
+      "number": 21
+    },
+    {
+      "file": "molten-alloy-rhythm-22.md",
+      "bpm": 120,
+      "key": "E minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 8.0,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Industrial-pop groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 120 BPM, 4/4, E minor. Angular industrial-pop groove with resonant metal percussion, distorted FM bass and sparse eerie synth chords. Uneven accents repeat against a steady pulse; short gritty attacks and deliberate gaps define the arrangement. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Metallic FM riff",
+          "prompt": "TrackType: Instrument, 120 BPM, 4/4, E minor. Solo FM synthesizer repeating a jagged midrange minor-key riff. Hollow metallic notes alternate with shorter muted responses, with fast decay, slight pitch movement and controlled harmonic grit. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Found-metal percussion",
+          "prompt": "TrackType: Instrument, 120 BPM, 4/4. Isolated industrial percussion groove with muted pipe strikes, scraped-metal taps and low drum pulses. Hard and soft accents alternate in a repeating syncopated pattern; tight room reflections and short resonances. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Glassy chord pulse",
+          "prompt": "TrackType: Instrument, 120 BPM, 4/4, E minor. Solo digital polysynth repeating cold, close-voiced minor chords with a stuttering pulse. Soft glass-like attacks contrast with the metallic rhythm; restrained chorus and short decays leave open space below. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, harsh metallic impact one-shot with scraping spring reverb tail and high-frequency resonance, 2 seconds",
+          "number": 1
+        }
+      ],
+      "name": "Molten Alloy Rhythm 22",
+      "number": 22
+    },
+    {
+      "file": "soft-horizon-house-23.md",
+      "bpm": 124,
+      "key": "D major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.741935,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Warm melodic-house groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 124 BPM, 4/4, D major. Warm melodic-house groove with an uplifting pluck motif, soft sustained chords and rounded rolling bass. Gentle four-on-the-floor drums and shakers support a steady phrase; clear attacks and restrained ambience. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Uplifting pluck arpeggio",
+          "prompt": "TrackType: Instrument, 124 BPM, 4/4, D major. Solo analog pluck synthesizer repeating a light major-key arpeggio. A low anchor alternates with rising upper notes, with a soft filter envelope and small tempo-synced echoes. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Rounded house bass",
+          "prompt": "TrackType: Instrument, 124 BPM, 4/4, D major. Solo rounded analog bass synthesizer playing a rolling melodic-house riff. Short syncopated roots answer a longer held note, with gentle filter movement, warm harmonics and clean note endings. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Organic house percussion",
+          "prompt": "TrackType: Instrument, 124 BPM, 4/4. Isolated melodic-house drums with a rounded four-on-the-floor kick, soft clap on two and four and flowing shaker sixteenths. Dry wooden taps answer the offbeats; light hand-played variation adds warmth. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Soft Horizon House 23",
+      "number": 23
+    },
+    {
+      "file": "iron-borough-bass-24.md",
+      "bpm": 134,
+      "key": "F minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.164179,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "UK bass-house groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 134 BPM, 4/4, F minor. Heavy UK bass-house groove with metallic modulated bass and firm four-on-the-floor drums. Short bass answers leave room for dry snares and shuffled hats; gritty midrange with a tight, rounded low end. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Rhythmic growl bass",
+          "prompt": "TrackType: Instrument, 134 BPM, 4/4, F minor. Solo FM bass synthesizer repeating a syncopated UK bass-house riff. Short hollow growls alternate with low sustained notes; distinct filter vowels, clipped releases and controlled distortion emphasize the rhythm. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "UK bass drums",
+          "prompt": "TrackType: Instrument, 134 BPM, 4/4. Isolated UK bass-house drums with a deep four-on-the-floor kick, dry layered snare on two and four and swinging hats. Occasional rim pickups add bounce; short decays preserve the pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Muted organ stabs",
+          "prompt": "TrackType: Instrument, 134 BPM, 4/4, F minor. Solo percussive organ playing a dark garage chord riff. Short offbeat stabs alternate with a higher answering voicing, with a rounded click attack and fast release to complement a heavy bassline. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, metallic neuro bass growl one-shot with pitch dip and harsh resonant flanger modulation, 1 second",
+          "number": 1
+        }
+      ],
+      "name": "Iron Borough Bass 24",
+      "number": 24
+    },
+    {
+      "file": "solar-anthem-house-25.md",
+      "bpm": 128,
+      "key": "A minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.5,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Festival melodic groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 128 BPM, 4/4, A minor. Bright festival-house groove with a repeating supersaw melody, plucked strings and punchy four-on-the-floor drums. A rounded bass anchors the chords; short melodic answers and controlled ambience keep the phrase focused. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Anthemic synth melody",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, A minor. Solo supersaw synthesizer repeating an uplifting minor-key lead phrase. Short rising notes resolve to a held tone, with bright detuned harmonics, a firm attack and a compact stereo delay. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Plucked string motif",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, A minor. Solo sitar playing a repeating minor-key motif with bright plucked attacks and small sliding ornaments. Short rhythmic phrases answer a lower anchor; clear string resonance and light room ambience. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Hand-percussion lift",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated festival-house percussion with alternating dhol strokes, crisp handclaps and bright shaker sixteenths. Low and high drum answers form a stable repeating phrase; controlled resonance and lively hand-played accents. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, massive orchestral brass braam impact with sub drop and wide concert hall reverb tail, 4 seconds",
+          "number": 1
+        }
+      ],
+      "name": "Solar Anthem House 25",
+      "number": 25
+    },
+    {
+      "file": "furnace-acid-pulse-26.md",
+      "bpm": 165,
+      "key": "G minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 5.818182,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Hardtekk groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 165 BPM, 4/4, G minor. Driving hardtekk groove with a distorted pitched kick, short acid-synth phrases and metallic claps. A relentless four-on-the-floor pulse underpins clipped syncopation; gritty harmonics and tightly contained low-end decay. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Pitched kick groove",
+          "prompt": "TrackType: Instrument, 165 BPM, 4/4, G minor. Isolated hardtekk kick sequence with a steady four-on-the-floor pulse and small syncopated extra hits. A pitched low tail follows each sharp attack; gritty overdrive and controlled decay keep adjacent kicks distinct. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Acid synth sequence",
+          "prompt": "TrackType: Instrument, 165 BPM, 4/4, G minor. Solo acid bass synthesizer repeating a squelchy sixteenth-note sequence with accents and slides. Low roots answer brief upper notes; the resonant filter opens and closes in a repeating cycle. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Metallic techno tops",
+          "prompt": "TrackType: Instrument, 165 BPM, 4/4. Isolated hardtekk top percussion with fast closed hats, dry claps on the backbeat and alternating ride-bell accents. Repeating strong and soft subdivisions add urgency; sharp attacks and short tails leave space for the kick. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, brutal hardtekk kick drum one-shot with harsh clipped transient punch and distorted tail, 1 second",
+          "number": 1
+        }
+      ],
+      "name": "Furnace Acid Pulse 26",
+      "number": 26
+    },
+    {
+      "file": "grainy-pocket-beats-27.md",
+      "bpm": 90,
+      "key": null,
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 10.666667,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Crunchy sampler drums",
+          "prompt": "TrackType: Instrument, 90 BPM, 4/4. Isolated vintage-sampler hip-hop drums with a thumping kick, crunchy snare and strongly swung hats. Soft ghost hits lead into the backbeat; grainy high frequencies and rounded transients evoke a low-resolution sampler. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Loose boom-bap groove",
+          "prompt": "TrackType: Instrument, 90 BPM, 4/4. Isolated boom-bap drum groove with a syncopated low kick, dry snare on two and four and loose hat accents. A slightly late backbeat and gritty sampled texture create a relaxed pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Snare and rim groove",
+          "prompt": "TrackType: Instrument, 90 BPM, 4/4. Isolated snare-and-rim percussion groove with a firm backbeat and quiet ghost-note answers. Alternating dry rim taps and short snare rattles create a swung repeating phrase with crunchy sampler texture. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Sampler top-percussion loop",
+          "prompt": "TrackType: Instrument, 90 BPM, 4/4. Isolated swung percussion with grainy shaker ticks, muted cowbell notes and soft tambourine accents. Short syncopated answers leave the low register open; rounded attacks and subtle low-resolution crunch unify the pattern. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, crunchy 12-bit vintage snare drum one-shot with warm converter grit and punchy attack, 1 second",
+          "number": 1
+        },
+        {
+          "prompt": "TrackType: SFX, warm 12-bit thumping kick drum one-shot with tight low end and vintage sampler punch, 1 second",
+          "number": 2
+        }
+      ],
+      "name": "Grainy Pocket Beats 27",
+      "number": 27
+    },
+    {
+      "file": "circuit-warehouse-drums-28.md",
+      "bpm": 126,
+      "key": null,
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.619048,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Classic house drums",
+          "prompt": "TrackType: Instrument, 126 BPM, 4/4. Isolated 909-style house drums with a firm four-on-the-floor kick, snappy clap on two and four and open offbeat hats. Soft closed hats fill the gaps; warm saturation and short drum decays. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Driving techno drums",
+          "prompt": "TrackType: Instrument, 126 BPM, 4/4. Isolated 909-style techno drums with a steady low kick, syncopated ride and dry rim accents. Short hat pickups repeat between the main beats; controlled kick resonance and crisp metallic cymbal attacks. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Tuned tom sequence",
+          "prompt": "TrackType: Instrument, 126 BPM, 4/4. Isolated electronic toms repeating a syncopated low-to-high phrase over a steady house pulse. Rounded pitch-dropping attacks, brief resonant tails and quiet rim-click answers create a rolling drum-machine groove. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "909 percussion tops",
+          "prompt": "TrackType: Instrument, 126 BPM, 4/4. Isolated drum-machine tops with alternating closed and open hats, dry rim clicks and soft claps. Accented offbeats and quiet sixteenth-note pickups form a steady house phrase with an open low register. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, authentic analog 909 bass drum one-shot with tuned decay and punchy front attack, 1 second",
+          "number": 1
+        },
+        {
+          "prompt": "TrackType: SFX, classic 909 hand clap one-shot with multiple analog trigger bursts and crisp decay, 1 second",
+          "number": 2
+        }
+      ],
+      "name": "Circuit Warehouse Drums 28",
+      "number": 28
+    },
+    {
+      "file": "summit-percussion-drive-29.md",
+      "bpm": 128,
+      "key": null,
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.5,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Festival drop drums",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated festival-house drums with a deep four-on-the-floor kick, layered clap backbeat and bright offbeat hats. Short snare pickups add movement; firm attacks and contained drum tails maintain an even driving groove. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Hand-drum tops",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated percussion groove with alternating bongo strokes, muted djembe slaps and light tambourine accents. Repeating syncopated answers ride a steady pulse; clear hand attacks and short room ambience. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Snare rhythm loop",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated snare-and-shaker rhythm with repeating sixteenth-note snare taps, stronger backbeat accents and a steady shaker. Small ghost-note variations add movement while the pattern holds a constant intensity and pulse. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Interlocking tom percussion",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated hand-played tom percussion with low floor-tom anchors and dry high-tom replies. Soft rim clicks mark the spaces between phrases; repeating syncopation, natural dynamic variation and compact room resonance. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: Instrument, solo high-energy build-up snare roll loop accelerating from quarter notes to 32nd notes with white noise riser, 128 BPM",
+          "number": 1
+        }
+      ],
+      "name": "Summit Percussion Drive 29",
+      "number": 29
+    },
+    {
+      "file": "pastel-bedroom-glow-30.md",
+      "bpm": 88,
+      "key": "F major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 10.909091,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Bedroom-pop groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 88 BPM, 4/4, F major. Soft bedroom-pop groove with gently chorused synth chords, melodic bass and close, understated drums. A small upper synth motif answers the chords; warm cassette tone and an unhurried, lightly swung pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Wavering synth keys",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4, F major. Solo analog synth keys repeating a wistful major-key chord progression. Softly struck voicings alternate with a small upper melody, with mild vibrato, rounded attacks and muted high frequencies. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Melodic bass guitar",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4, F major. Solo fingerstyle bass guitar playing an easy bedroom-pop line. Low roots connect through small ascending passing notes, with short held tones, soft finger attack and a warm lightly driven sound. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Soft bedroom-pop drums",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4. Isolated drum groove with a muffled kick, close dry snare and gently swung closed hats. Quiet brushed ghost strokes and occasional open-hat lifts keep the phrase human; small-room warmth and soft transients. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Pastel Bedroom Glow 30",
+      "number": 30
+    },
+    {
+      "file": "fractured-steel-bass-31.md",
+      "bpm": 145,
+      "key": "D minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 6.62069,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Tearout bass groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 145 BPM, 4/4, D minor. Aggressive tearout-dubstep groove with short modulated bass bursts, a deep sub foundation and forceful half-time drums. Staccato bass answers leave deliberate silence around the snare; gritty but distinct attacks. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Staccato bass growls",
+          "prompt": "TrackType: Instrument, 145 BPM, 4/4, D minor. Solo modulated bass synthesizer repeating short tearout-style growls and a lower sustained answer. Metallic filter movement, rhythmic gating and clear gaps give the distorted phrase a pronounced half-time shape. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Half-time dubstep drums",
+          "prompt": "TrackType: Instrument, 145 BPM, 4/4. Isolated half-time dubstep drums with a compact heavy kick, full-bodied snare on beat three and short metallic hats. Small kick pickups answer the backbeat; firm transients and tightly controlled room decay. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Metallic percussion counter-rhythm",
+          "prompt": "TrackType: Instrument, 145 BPM, 4/4. Isolated dubstep top percussion with muted metal strikes, clipped ride-bell notes and tight shaker bursts. A sparse syncopated phrase answers the half-time backbeat; crisp attacks and short tails leave the bass register open. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, metallic tearout bass screech one-shot with pitch modulation and harsh resonant clipping, 1 second",
+          "number": 1
+        }
+      ],
+      "name": "Fractured Steel Bass 31",
+      "number": 31
+    },
+    {
+      "file": "moss-crystal-rhythm-32.md",
+      "bpm": 100,
+      "key": "C major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 9.6,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Organic electronic groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 100 BPM, 4/4, C major. Gentle organic-electronic groove with marimba-like plucks, breathy synth chords and soft bass. Light wooden percussion supports a repeating interlocking melody; delicate attacks, warm resonance and small airy echoes. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Marimba pattern",
+          "prompt": "TrackType: Instrument, 100 BPM, 4/4, C major. Solo marimba repeating an interlocking major-key figure with low anchor notes and lightly syncopated upper replies. Soft mallet attacks, woody resonance and short room ambience preserve the rhythmic detail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Breathy chord movement",
+          "prompt": "TrackType: Instrument, 100 BPM, 4/4, C major. Solo airy synthesizer repeating a slow major-key chord phrase. Breath-like upper harmonics move gently above warm held tones, with soft attacks and controlled releases that keep the changes distinct. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Wooden percussion pattern",
+          "prompt": "TrackType: Instrument, 100 BPM, 4/4. Isolated organic percussion with hollow woodblocks, fingertip frame-drum taps and fine seed-shaker ticks. Low and high taps trade a gently syncopated phrase; dry close detail and a light, open pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, organic water droplet impact one-shot with wooden resonant decay and subtle room echo, 2 seconds",
+          "number": 1
+        }
+      ],
+      "name": "Moss Crystal Rhythm 32",
+      "number": 32
+    },
+    {
+      "file": "indigo-velvet-soul-33.md",
+      "bpm": 95,
+      "key": "Ab minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 10.105263,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Alternative R&B groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 95 BPM, 4/4, Ab minor. Moody alternative R&B groove with rich synth-key chords, smooth sliding bass and restrained drums. Soft upper-note answers sit above a relaxed syncopated pocket; warm harmonics, gentle chorus and close percussion detail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Wavetable chord phrase",
+          "prompt": "TrackType: Instrument, 95 BPM, 4/4, Ab minor. Solo wavetable keys playing warm minor seventh and ninth chords. Slow upper-voice movement connects the voicings, with soft electric-piano-like attacks, restrained chorus and subtle pitch drift. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Smooth sliding bass",
+          "prompt": "TrackType: Instrument, 95 BPM, 4/4, Ab minor. Solo rounded 808 bass repeating sustained roots with small sliding pickups. Smooth portamento, clear pauses and faint upper harmonics support a relaxed R&B pocket without long overlapping tails. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "R&B rim and shaker groove",
+          "prompt": "TrackType: Instrument, 95 BPM, 4/4, Ab minor. Isolated R&B drums with a soft kick, dry woody rim backbeat and fine shaker sixteenths. Quiet hat doubles answer the rim accents; gentle swing, compact decays and intimate room detail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Indigo Velvet Soul 33",
+      "number": 33
+    },
+    {
+      "file": "crystal-cloud-trap-34.md",
+      "bpm": 150,
+      "key": "E major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 6.4,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Bright melodic-trap groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 150 BPM, 4/4, E major. Bright melodic-trap groove with a crystalline bell motif, bouncy 808 bass and crisp half-time drums. Short upper-note answers sparkle above the pulse; rounded sub weight and restrained shimmering echoes. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Crystalline bell arpeggio",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4, E major. Solo bell synthesizer repeating a light major-key arpeggio. High notes answer a lower repeated tone, with clear glassy attacks, short decays and a faint bright echo between phrases. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Bouncy melodic 808",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4, E major. Solo 808 bass repeating a buoyant major-key riff with low roots, brief octave jumps and small slides. Rounded attacks, smooth sustain and clean phrase gaps emphasize the bounce. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Bright half-time drums",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4. Isolated melodic-trap drums with a short round kick, bright clap on beat three and fluttering closed hats. Alternating single and double hat strokes answer soft rim ghosts; crisp, compact transients. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Crystal Cloud Trap 34",
+      "number": 34
+    },
+    {
+      "file": "afterhours-conga-house-35.md",
+      "bpm": 127,
+      "key": "F minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.559055,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Percussive tech-house groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 127 BPM, 4/4, F minor. Driving tech-house groove with a rolling bass, tight four-on-the-floor kick and syncopated congas. Short chord stabs answer the bass; dry claps and crisp hats maintain a steady club pulse. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Rolling tech-house bass",
+          "prompt": "TrackType: Instrument, 127 BPM, 4/4, F minor. Solo analog bass synthesizer repeating a low syncopated tech-house riff. Short roots alternate with one longer note and a small upper pickup, with warm overdrive and quick filter decays. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Tight house drums",
+          "prompt": "TrackType: Instrument, 127 BPM, 4/4. Isolated tech-house drums with a short four-on-the-floor kick, snappy clap on two and four and rolling closed hats. Brief open hats lift the offbeats; clear attacks and dry room character. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Conga and bongo dialogue",
+          "prompt": "TrackType: Instrument, 127 BPM, 4/4, F minor. Isolated conga-and-bongo groove with muted low strokes, bright finger slaps and soft ghost taps. Two short syncopated phrases answer each other over a steady house pulse; close hand detail and controlled resonance. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Afterhours Conga House 35",
+      "number": 35
+    },
+    {
+      "file": "silver-current-breaks-36.md",
+      "bpm": 174,
+      "key": "Eb major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 5.517241,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Liquid DnB groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 174 BPM, 4/4, Eb major. Warm liquid drum-and-bass groove with soulful electric-piano chords, smooth detuned bass and rolling two-step drums. Airy upper notes answer the chords; clear breakbeat detail and restrained ambience keep the groove flowing. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Smooth detuned bass",
+          "prompt": "TrackType: Instrument, 174 BPM, 4/4, Eb major. Solo detuned bass synthesizer repeating a flowing liquid-DnB phrase of low held notes and short passing tones. Gentle filter movement and warm midrange harmonics sit above a stable rounded sub. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Soulful electric piano",
+          "prompt": "TrackType: Instrument, 174 BPM, 4/4, Eb major. Solo electric piano repeating a spacious major-key seventh-chord progression over a fast drum-and-bass pulse. Slow chord changes and light upper-note replies contrast with the tempo; warm tone and subtle tremolo. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Rolling DnB break",
+          "prompt": "TrackType: Instrument, 174 BPM, 4/4. Isolated liquid-DnB drums with syncopated kicks, crisp snares on two and four and rolling ghost notes. Fine closed hats and brief ride accents carry the fast pulse; tight decays and natural dynamic variation. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Silver Current Breaks 36",
+      "number": 36
+    },
+    {
+      "file": "honey-wooden-soul-37.md",
+      "bpm": 84,
+      "key": "Db major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 11.428571,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Live neo-soul groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 84 BPM, 4/4, Db major. Warm neo-soul groove with upright-piano chords, fingerstyle bass and a relaxed live drum pocket. Small piano answers and soft guitar accents leave room between phrases; intimate room tone and gentle dynamic movement. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Upright-piano harmony",
+          "prompt": "TrackType: Instrument, 84 BPM, 4/4, Db major. Solo upright piano playing a relaxed major-key soul progression with warm seventh-chord voicings. Gentle passing notes connect the upper melody; soft hammer attacks and close wooden room resonance. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Fingerstyle soul bass",
+          "prompt": "TrackType: Instrument, 84 BPM, 4/4, Db major. Solo electric bass playing a lyrical neo-soul phrase with low anchors and gently syncopated passing tones. Muted ghost notes and short slides add feel; warm finger attack and restrained sustain. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Soft live drum pocket",
+          "prompt": "TrackType: Instrument, 84 BPM, 4/4. Isolated live neo-soul drums with a soft low kick, wooden cross-stick on two and four and loose brushed hats. Quiet snare ghosts lean behind the pulse; close room detail and gentle dynamic variation. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Honey Wooden Soul 37",
+      "number": 37
+    },
+    {
+      "file": "forgotten-attic-breaks-38.md",
+      "bpm": 95,
+      "key": null,
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 10.105263,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Loose funk break",
+          "prompt": "TrackType: Instrument, 95 BPM, 4/4. Isolated acoustic funk break with ghost-note snares, a warm syncopated kick and loose ride accents. The snare leans behind the pulse; natural hand dynamics and soft tape saturation retain the pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Dry vintage break",
+          "prompt": "TrackType: Instrument, 95 BPM, 4/4. Isolated vintage acoustic drums with a dry snare backbeat, short kick notes and uneven closed-hat accents. Occasional snare drags connect the phrase; gritty tape texture and compact room reflections. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Tom-and-snare break",
+          "prompt": "TrackType: Instrument, 95 BPM, 4/4. Isolated acoustic drum groove with repeating low-tom replies to a dry snare backbeat. A restrained kick and softly ticking hats hold the pulse; short drum resonance and lightly swung ghost notes. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Tambourine break tops",
+          "prompt": "TrackType: Instrument, 95 BPM, 4/4. Isolated funk top percussion with a loose tambourine backbeat, brushed shaker subdivisions and sparse cowbell answers. Slightly late accents form a repeating swung phrase; grainy tape warmth and an open low register. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: Instrument, solo energetic acoustic drum fill with cascading tom rolls and syncopated snare accents, 95 BPM",
+          "number": 1
+        },
+        {
+          "prompt": "TrackType: SFX, vintage acoustic snare drum one-shot with organic tape hiss and spring reverb ring, 2 seconds",
+          "number": 2
+        }
+      ],
+      "name": "Forgotten Attic Breaks 38",
+      "number": 38
+    },
+    {
+      "file": "willow-string-reverie-39.md",
+      "bpm": 80,
+      "key": "C major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 12.0,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Harp and cello miniature",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 80 BPM, 4/4, C major. Quiet acoustic ensemble with flowing harp arpeggios and a warm sustained cello line. Small upper harp answers return to a stable major-key chord phrase; gentle pulse, soft dynamics and intimate room ambience. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Flowing harp arpeggio",
+          "prompt": "TrackType: Instrument, 80 BPM, 4/4, C major. Solo acoustic harp repeating a delicate major-key arpeggio. Low plucked anchors alternate with descending upper notes, with soft finger attack, clear string resonance and a small room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Harp chord phrase",
+          "prompt": "TrackType: Instrument, 80 BPM, 4/4, C major. Solo concert harp repeating gently rolled chords and a simple upper melody. A slow, even pulse leaves room between the plucks; rounded wooden resonance and controlled releases keep the phrase intimate. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Pizzicato cello ostinato",
+          "prompt": "TrackType: Instrument, 80 BPM, 4/4, C major. Solo pizzicato cello playing a gentle major-key ostinato with low roots and short ascending answers. Soft finger releases, rounded wooden body and small pauses complement a flowing harp pattern. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, single acoustic harp string pluck one-shot with resonant wooden soundboard decay and airy room tail, 3 seconds",
+          "number": 1
+        }
+      ],
+      "name": "Willow String Reverie 39",
+      "number": 39
+    },
+    {
+      "file": "neon-borough-bounce-40.md",
+      "bpm": 134,
+      "key": "G# minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.164179,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "UK bassline groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 134 BPM, 4/4, G# minor. Bouncy UK bassline groove with a metallic FM bass hook and punchy four-on-the-floor drums. Short chord replies and shuffled hats frame the syncopation; tight low end and controlled midrange bite. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "FM donk riff",
+          "prompt": "TrackType: Instrument, 134 BPM, 4/4, G# minor. Solo FM bass synthesizer repeating a hollow, metallic bassline riff. Short low notes alternate with springy octave answers, with fast pitch envelopes, compact decay and clearly separated phrases. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Shuffled garage drums",
+          "prompt": "TrackType: Instrument, 134 BPM, 4/4. Isolated garage drums with a firm four-on-the-floor kick, dry snare backbeat and shuffled hats. Soft rim pickups and quick open-hat answers add bounce; short decays and a tight low register. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Organ chord counter-riff",
+          "prompt": "TrackType: Instrument, 134 BPM, 4/4, G# minor. Solo house organ playing a dark syncopated chord counter-riff. Muted low stabs answer brighter upper inversions, with a fast percussive attack and short release to leave room for the metallic bass. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, short metallic UK bass donk stab one-shot with pitch envelope modulation and aggressive distortion, 1 second",
+          "number": 1
+        }
+      ],
+      "name": "Neon Borough Bounce 40",
+      "number": 40
+    },
+    {
+      "file": "bamboo-bronze-rhythm-41.md",
+      "bpm": 110,
+      "key": null,
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 8.727273,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Taiko and block ensemble",
+          "prompt": "TrackType: Instrument, 110 BPM, 4/4. Isolated percussion ensemble with rounded low taiko strokes, dry bamboo-block answers and restrained small-gong accents. A repeating call-and-response holds a steady pulse; clear hand dynamics and contained room resonance. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Tabla groove",
+          "prompt": "TrackType: Instrument, 110 BPM, 4/4. Isolated tabla pair repeating a syncopated hand-drum phrase. Bright finger taps answer rounded bass strokes with gentle pitch inflection; clear rests, close-mic detail and natural dynamic variation. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Metallophone cycle",
+          "prompt": "TrackType: Instrument, 110 BPM, 4/4. Isolated metallophone ensemble repeating an interlocking cyclical melody. Alternating low and high struck notes form a steady pulse; soft mallet attack, bright ringing partials and controlled note damping. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Bamboo-block rhythm",
+          "prompt": "TrackType: Instrument, 110 BPM, 4/4. Isolated wooden temple-block percussion with alternating low and high taps in a repeating syncopated phrase. Soft doubled strokes answer the main accents; dry hollow attacks, subtle hand variation and an open low register. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, colossal Japanese taiko drum rim and skin impact one-shot with deep resonant sub decay, 3 seconds",
+          "number": 1
+        }
+      ],
+      "name": "Bamboo Bronze Rhythm 41",
+      "number": 41
+    },
+    {
+      "file": "satin-radio-bounce-42.md",
+      "bpm": 96,
+      "key": "D minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 10.0,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Early-2000s R&B groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 96 BPM, 4/4, D minor. Bouncy early-2000s R&B groove with short synth plucks, nylon-string guitar and a rounded bassline. Dry syncopated drums leave gaps around the melody; crisp attacks and restrained warm room ambience. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Nylon-guitar chord riff",
+          "prompt": "TrackType: Instrument, 96 BPM, 4/4, D minor. Solo nylon-string guitar repeating a syncopated minor-key chord riff. Muted strums alternate with gently picked upper-string answers, with small slides, warm finger attack and a short room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Plucked synth hook",
+          "prompt": "TrackType: Instrument, 96 BPM, 4/4, D minor. Solo percussive synthesizer repeating a catchy minor-key hook. Short low notes answer a brighter rising figure, with rounded pluck attacks, hollow harmonics and clipped tempo-synced echoes. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Syncopated R&B drums",
+          "prompt": "TrackType: Instrument, 96 BPM, 4/4. Isolated R&B drums with a rounded kick, dry rimshot backbeat and clipped closed hats. Wooden clicks and quiet handclaps answer the syncopated kick; slightly swung subdivisions and deliberate gaps create the bounce. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Satin Radio Bounce 42",
+      "number": 42
+    },
+    {
+      "file": "golden-skyline-house-43.md",
+      "bpm": 128,
+      "key": "F major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.5,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Uplifting house groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 128 BPM, 4/4, F major. Uplifting progressive-house groove with a bright synth melody, picked guitar chords and rounded bass. Firm four-on-the-floor drums hold a steady phrase; clear melodic answers and short ambient tails maintain forward motion. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Bright synth melody",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, F major. Solo supersaw synthesizer repeating a hopeful major-key melody. Short rising notes answer a held upper tone, with clean attacks, gently detuned harmonics and a compact stereo echo. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Big-room drum groove",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4. Isolated big-room house drums with a deep four-on-the-floor kick, crisp clap backbeat and bright offbeat hats. Small snare pickups connect the phrase; firm transients and short, controlled decays. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Rhythmic guitar arpeggio",
+          "prompt": "TrackType: Instrument, 128 BPM, 4/4, F major. Solo clean electric guitar repeating an uplifting major-key arpeggio. Muted lower-string pulses answer chiming upper notes, with light picking detail and a short dotted rhythmic echo that stays behind the phrase. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, colossal festival EDM downlifter with white noise sweep, pitch drop, and sub bass rumble, 5 seconds",
+          "number": 1
+        }
+      ],
+      "name": "Golden Skyline House 43",
+      "number": 43
+    },
+    {
+      "file": "pixel-fracture-groove-44.md",
+      "bpm": 140,
+      "key": "C# minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 6.857143,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Glitch-electronic groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 140 BPM, 4/4, C# minor. Intricate electronic groove with stuttering synth plucks, clipped digital percussion and rounded sub bass. Small repeated edits form a stable syncopated pattern; clear spaces and short grainy textures keep the pulse audible. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Digital percussion loop",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4. Isolated glitch percussion with tiny clicks, dry snare fragments and short metallic ticks. Brief repeated stutters answer a regular backbeat; alternating loud and soft hits create a precise, repeating rhythm. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Stepped synth arpeggio",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4, C# minor. Solo digital synthesizer repeating a minor-key arpeggio with stepped filter changes. Short glassy notes alternate with darker bit-reduced accents; clipped releases and consistent rhythmic rests keep the sequence defined. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Granular chord rhythm",
+          "prompt": "TrackType: Instrument, 140 BPM, 4/4, C# minor. Solo granular polysynth repeating a soft minor chord figure in short gated pulses. Small grain repeats answer longer chord fragments; muted highs, gentle stereo movement and a warm body contrast with crisp digital percussion. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: SFX, sharp digital audio glitch one-shot with buffer repeat stutter and sudden high-pass frequency cutoff, 1 second",
+          "number": 1
+        }
+      ],
+      "name": "Pixel Fracture Groove 44",
+      "number": 44
+    },
+    {
+      "file": "deep-ember-house-45.md",
+      "bpm": 124,
+      "key": "G minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.741935,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Deep melodic-house groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 124 BPM, 4/4, G minor. Warm deep-house groove with gently swelling synth chords, rounded bass and light organic percussion. A steady four-on-the-floor pulse supports a small upper melody; soft attacks and compact ambience keep the arrangement intimate. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Swelling synth chords",
+          "prompt": "TrackType: Instrument, 124 BPM, 4/4, G minor. Solo analog polysynth repeating an expressive minor-key chord progression. Warm held voicings carry small upper-note changes, with gentle filter swells, restrained chorus and controlled releases. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Rounded deep-house bass",
+          "prompt": "TrackType: Instrument, 124 BPM, 4/4, G minor. Solo analog sub-bass synthesizer repeating a rolling deep-house riff. Short syncopated roots lead into a held tone, with a rounded filter envelope, soft saturation and tidy note endings. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Deep-house hand percussion",
+          "prompt": "TrackType: Instrument, 124 BPM, 4/4. Isolated deep-house percussion with muted conga strokes, a soft cross-stick backbeat and rolling shaker sixteenths. Short syncopated answers and natural hand dynamics create an intimate pocket with the low register open. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Deep Ember House 45",
+      "number": 45
+    },
+    {
+      "file": "iron-thunder-drums-46.md",
+      "bpm": 150,
+      "key": null,
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 6.4,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Driving metal drums",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4. Isolated heavy-metal drums with repeating double-kick figures, a sharp snare backbeat and clear ride-bell accents. Short gaps separate the kick bursts; close drum detail and controlled room compression preserve each attack. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Half-time metal groove",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4. Isolated metalcore drums with a forceful half-time snare, syncopated double-kick bursts and short cymbal accents. Deliberate gaps give the phrase weight; firm attacks and restrained room decay keep the rhythm clear. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Tom-led metal groove",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4. Isolated heavy-metal drums repeating a low-to-high tom pattern around a steady kick pulse. Short snare answers and lightly tapped ride keep the phrase grounded; defined attacks and compact room resonance. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Alternate double-kick groove",
+          "prompt": "TrackType: Instrument, 150 BPM, 4/4. Isolated metal drums with alternating single and double-kick bursts, a dry snare on two and four and steady closed-hat eighths. Quiet snare pickups connect the repeating phrase; tight cymbal decay and punchy room tone. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [
+        {
+          "prompt": "TrackType: Instrument, solo explosive heavy metal drum fill rolling across acoustic toms into a crashing cymbal hit, 150 BPM",
+          "number": 1
+        },
+        {
+          "prompt": "TrackType: SFX, deep acoustic steel snare drum one-shot with rimshot strike and aggressive room compression tail, 2 seconds",
+          "number": 2
+        }
+      ],
+      "name": "Iron Thunder Drums 46",
+      "number": 46
+    },
+    {
+      "file": "dusty-basement-beats-47.md",
+      "bpm": 88,
+      "key": "C minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 10.909091,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Dusty boom-bap groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 88 BPM, 4/4, C minor. Gritty boom-bap groove with dark piano chord chops, rounded bass and loose acoustic drums. Short piano answers leave space around a heavy backbeat; muted highs and warm tape grain tie the parts together. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Chopped piano chords",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4, C minor. Solo upright piano repeating short minor-key chord figures. Low clipped voicings alternate with a small upper answer, with softened hammer attacks, muted highs and light gritty tape texture. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Gritty bass guitar",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4, C minor. Solo electric bass playing a sparse boom-bap riff of low roots and short passing tones. Muted ghost notes fall between the accents; rounded finger attack and warm overdrive add texture. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Dusty drum break",
+          "prompt": "TrackType: Instrument, 88 BPM, 4/4. Isolated boom-bap drums with a thumping kick, dry snare on two and four and loose swung hats. Soft ghost notes lean behind the backbeat; short room reflections and rounded tape grit preserve the pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Dusty Basement Beats 47",
+      "number": 47
+    },
+    {
+      "file": "loose-amber-jazz-48.md",
+      "bpm": 84,
+      "key": "Eb major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 11.428571,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Loose jazz-hop groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 84 BPM, 4/4, Eb major. Laid-back jazz-hop groove with warm electric-piano chords, muted guitar answers and rounded bass. Loose drums sit around a steady pulse with a slightly late snare; soft transients and intimate room tone. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Jazz electric-piano chords",
+          "prompt": "TrackType: Instrument, 84 BPM, 4/4, Eb major. Solo electric piano repeating rich major-key seventh and ninth chords. Lightly rolled voicings and small upper-note replies land just behind the pulse, with gentle tremolo and a warm rounded attack. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Upright bass phrase",
+          "prompt": "TrackType: Instrument, 84 BPM, 4/4, Eb major. Solo upright bass playing a relaxed jazz-hop line with low anchors and short walking pickups. Soft finger plucks, muted ghost notes and audible wooden resonance give the repeating phrase a loose pocket. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Loose jazz-hop drums",
+          "prompt": "TrackType: Instrument, 84 BPM, 4/4. Isolated acoustic drums with uneven swung hats, a rounded syncopated kick and a slightly late snare backbeat. Quiet drag notes answer the accents; soft room reflections and natural dynamics preserve the relaxed feel. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Loose Amber Jazz 48",
+      "number": 48
+    },
+    {
+      "file": "uptown-piano-house-49.md",
+      "bpm": 125,
+      "key": "F major",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 7.68,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Classic piano-house groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 125 BPM, 4/4, F major. Buoyant piano-house groove with bright percussive chords, bouncy analog bass and tight drum-machine drums. Short upper piano answers ride an even four-on-the-floor pulse; warm saturation and clear, compact attacks. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Piano-house chord riff",
+          "prompt": "TrackType: Instrument, 125 BPM, 4/4, F major. Solo grand piano repeating a bright major-key house chord riff. Strong offbeat voicings alternate with short upper-note answers, with a firm percussive attack and a small warm room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Bouncy house bass",
+          "prompt": "TrackType: Instrument, 125 BPM, 4/4, F major. Solo analog bass synthesizer repeating a springy syncopated house line. Low roots alternate with short octave pickups; rounded filter plucks, warm harmonics and fast releases leave clear rhythmic space. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Classic house drum loop",
+          "prompt": "TrackType: Instrument, 125 BPM, 4/4. Isolated house drums with a rounded four-on-the-floor kick, dry clap on two and four and bright offbeat hats. Quiet shaker sixteenths and occasional rim answers add lift; crisp attacks and warm saturation. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Uptown Piano House 49",
+      "number": 49
+    },
+    {
+      "file": "nocturnal-glass-soul-50.md",
+      "bpm": 120,
+      "key": "D minor",
+      "bars": 4,
+      "beats_per_bar": 4,
+      "duration_seconds": 8.0,
+      "prompts": [
+        {
+          "number": 1,
+          "role": "Nocturnal hip-hop groove",
+          "prompt": "TrackType: Music, VocalType: Instrumental, 120 BPM, 4/4, D minor. Moody melodic hip-hop groove with dark synth chords, a sparse guitar motif and sliding 808 bass. Soft half-time drums leave space around the melody; restrained tape warmth and short dark echoes. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 2,
+          "role": "Ambient guitar motif",
+          "prompt": "TrackType: Instrument, 120 BPM, 4/4, D minor. Solo clean electric guitar repeating a wistful minor-key motif with small slides and softly picked double-stops. Short melodic answers emerge between held notes, with gentle chorus and a restrained dark room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 3,
+          "role": "Warm sliding 808",
+          "prompt": "TrackType: Instrument, 120 BPM, 4/4, D minor. Solo 808 bass repeating low sustained roots with short sliding pickups. Smooth pitch transitions, clear phrase gaps and gentle harmonic saturation support a spacious half-time groove. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        },
+        {
+          "number": 4,
+          "role": "Nocturnal trap percussion",
+          "prompt": "TrackType: Instrument, 120 BPM, 4/4. Isolated half-time drums with a compact kick, soft rimshot on beat three and lightly shuffled hats. Sparse fingertip percussion answers the rim; brief hat doubles, dry low end and a small dark room tail. Repeating four-bar loop, steady phrase throughout, clean return to the opening beat."
+        }
+      ],
+      "optional_non_loop_sounds": [],
+      "name": "Nocturnal Glass Soul 50",
+      "number": 50
+    }
+  ],
+  "naming_format": "X Y Z ##"
+}

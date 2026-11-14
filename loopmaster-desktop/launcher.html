@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LoopMaster SA3 Launcher</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        .container {
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            margin-top: 0;
+            color: #bb86fc;
+            text-align: center;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #333333;
+            color: white;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #444444;
+            border-color: #bb86fc;
+        }
+        .btn-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .btn-desc {
+            font-size: 13px;
+            color: #aaaaaa;
+        }
+        .dropdown {
+            width: 100%;
+            padding: 12px;
+            background-color: #2a2a2a;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+        }
+        .dropdown:focus {
+            border-color: #bb86fc;
+        }
+        .error {
+            display: none;
+            margin-bottom: 20px;
+            padding: 12px;
+            color: #ffd7d7;
+            background: #542525;
+            border: 1px solid #a84c4c;
+            border-radius: 6px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LoopMaster Launcher</h1>
+        <p style="text-align:center; color:#ccc; margin-bottom: 30px;">Select a Stable Audio 3 model to boot.</p>
+        <div id="launchError" class="error" role="alert"></div>
+        
+        <div style="margin-bottom: 30px;">
+            <label style="color: #ccc; display: block; margin-bottom: 8px;">Inference Model</label>
+            <select id="modelSelect" class="dropdown">
+                <option value="medium">Medium Model (Official - FP16)</option>
+                <option value="medium-bf16">Medium Model (Optimized - BF16)</option>
+                <option value="small-music">Small Music Model</option>
+                <option value="small-sfx">Small SFX Model</option>
+            </select>
+        </div>
+        
+        <button class="btn" onclick="launch()">
+            <span class="btn-title">Boot Server</span>
+            <span class="btn-desc">Launch Stable Audio 3</span>
+        </button>
+    </div>
+
+    <script>
+        function launch() {
+            const model = document.getElementById('modelSelect').value;
+            window.electronAPI.startBackend(model);
+        }
+
+        window.electronAPI.onBackendError((message) => {
+            const error = document.getElementById('launchError');
+            error.textContent = message;
+            error.style.display = 'block';
+            document.querySelector('.btn-title').textContent = 'Retry Server';
+            document.querySelector('.btn-desc').textContent = 'Launch Stable Audio 3 again';
+        });
+    </script>
+</body>
+</html>

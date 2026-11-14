@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en" data-lm-skin="original" data-lm-skin-loading>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoopMaster Loop Generator (Stable Audio 3)</title>
+    <meta name="description" content="Multi-track audio variant generator with synchronized grid playback.">
+    <link rel="stylesheet" href="/static/app.css">
+    <link rel="stylesheet" href="/static/skin-core.css">
+    <script src="/static/skins/skin_core.js"></script>
+    <script src="/static/skins/skin_catalog.js"></script>
+    <script src="/static/skins/skin_system.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to Main Content</a>
+    <main class="app-container" id="main-content" tabindex="-1">
+
+        <!-- Header -->
+        <header class="app-header" data-lm-region="header">
+            <div class="app-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/></svg>
+            </div>
+            <h1 class="app-title">LoopMaster Loop Generator <span>(Stable Audio 3)</span></h1>
+            <div class="app-header-tools">
+                <button class="btn-skins" id="btn-skins" type="button" aria-controls="skin-picker-modal" aria-expanded="false">
+                    Skins <span class="skin-current-label" id="skin-current-label">Original</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Controls -->
+        <section class="controls-panel" id="controls-panel" aria-label="Generation Controls" data-lm-region="generator">
+            <div class="controls-row">
+                <div class="control-group prompt-group" data-lm-part="prompt-builder">
+                    <div class="control-group-header">
+                        <span class="control-label">Prompt Builder</span>
+                        <div class="prompt-inline-btns">
+                            <button class="prompt-pill-btn" id="btn-randomize-all" type="button" title="Roll one instrument, every music field, and one character field">
+                                <svg class="btn-icon prompt-pill-icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7.5 7.5h.01M16.5 7.5h.01M7.5 16.5h.01M16.5 16.5h.01M12 12h.01"/></svg>
+                                Randomize All
+                            </button>
+                            <button class="prompt-pill-btn" id="btn-generation-history" type="button" aria-controls="generation-history-panel" aria-expanded="false">History <span id="history-count">0</span></button>
+                            <button class="prompt-pill-btn" id="btn-file-naming" type="button" aria-controls="file-naming-modal" aria-expanded="false">File Naming</button>
+                        </div>
+                    </div>
+                    <div class="prompt-freeform-row">
+                        <label class="chip-label" for="prompt-freeform">Prompt</label>
+                        <div class="prompt-composer-bar">
+                            <textarea id="prompt-freeform" class="prompt-freeform" rows="3" maxlength="2000" spellcheck="true" placeholder="Type the exact prompt, or use the controls below to assemble one."></textarea>
+                            <span id="prompt-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                    <div class="prompt-builder-grid" id="prompt-builder-sections" aria-live="polite">
+                        <span class="prompt-builder-loading">Loading prompt options…</span>
+                    </div>
+                    <section class="chord-progressor" id="chord-progressor" aria-labelledby="chord-progressor-title" data-lm-part="progressor">
+                        <div class="chord-progressor-header">
+                            <div>
+                                <span class="chip-label" id="chord-progressor-title">4-Chord Progressor</span>
+                                <span class="chord-progressor-hint">Choose “Use Chord Progressor” in Key / Chord to apply these chords.</span>
+                            </div>
+                            <div class="chord-progressor-actions">
+                                <button class="chip-mute chord-progressor-mute" id="btn-progression-mute" type="button" aria-pressed="false" title="Mute the chord progressor from Randomize All">🔓</button>
+                                <button class="chip-dice chord-progressor-dice" id="btn-progression-random" type="button" title="Randomize the four-chord progression">⚄</button>
+                            </div>
+                        </div>
+                        <div class="chord-progressor-controls">
+                            <label class="chord-progressor-field" for="progression-key-select">
+                                <span class="chip-label">Progression key</span>
+                                <select class="prompt-section-select" id="progression-key-select"></select>
+                            </label>
+                            <label class="chord-progressor-field" for="progression-preset-select">
+                                <span class="chip-label">Progression / emotion</span>
+                                <select class="prompt-section-select" id="progression-preset-select"></select>
+                            </label>
+                        </div>
+                        <div class="chord-progressor-cards" id="progression-chord-cards" aria-live="polite"></div>
+                        <p class="chord-progressor-status" id="progression-status">Choose a key and progression.</p>
+                    </section>
+                    <div class="prompt-builder-error" id="prompt-builder-error" role="alert" hidden></div>
+                    <section class="generation-history-panel" id="generation-history-panel" aria-label="Generation history" hidden>
+                        <div class="generation-history-header">
+                            <span>Drafts and generations</span>
+                            <button class="prompt-pill-btn" id="btn-clear-generation-history" type="button">Clear all</button>
+                        </div>
+                        <div class="generation-history-viewport" id="generation-history-viewport" tabindex="0">
+                            <div class="generation-history-items" id="generation-history-items"></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="control-group" data-lm-part="tempo-control">
+                    <div class="control-group-header">
+                        <label class="control-label" for="bpm-input" title="Tempo in beats per minute. Determines loop length (4 bars). Drag to change, double-click to type.">BPM</label>
+                    </div>
+                    <input class="control-input" id="bpm-input" type="number"
+                           min="40" max="300" value="120" step="1"
+                           name="bpm" inputmode="numeric"
+                           title="Click to type, drag ↕ to change. 120 BPM = 8s loop (4 bars)">
+                </div>
+
+                <div class="control-group" data-lm-part="seed-control">
+                    <div class="control-group-header">
+                        <label class="control-label" for="seed-input" title="Random seed for reproducible generations. -1 = random each time. Set a number to get the same output.">Seed</label>
+                    </div>
+                    <input class="control-input control-input-sm" id="seed-input" type="number"
+                           min="-1" max="999999" value="-1" step="1"
+                           name="seed" inputmode="numeric"
+                           title="Click to type, drag ↕ to change. -1 = random">
+                </div>
+
+                <div class="control-group" data-lm-part="steps-control">
+                    <div class="control-group-header">
+                        <label class="control-label" for="steps-input" title="Diffusion denoising passes. 8 = fast iteration, 20-30 = high quality, 50+ = diminishing returns.">Steps</label>
+                    </div>
+                    <input class="control-input control-input-sm" id="steps-input" type="number"
+                           min="1" max="100" value="8" step="1"
+                           name="steps" inputmode="numeric"
+                           title="Click to type, drag ↕ to change. More = better but slower">
+                </div>
+
+                <div class="control-group" data-lm-part="tier-control">
+                    <div class="control-group-header">
+                        <label class="control-label" for="generation-tier" title="Draft caps inference work for inexpensive iteration; Final uses the requested settings.">Tier</label>
+                    </div>
+                    <select class="control-input control-input-sm" id="generation-tier" name="generation_tier">
+                        <option value="draft" selected>Draft (max 8 steps)</option>
+                        <option value="final">Final (uses Steps)</option>
+                    </select>
+                </div>
+
+                <div class="control-group" data-lm-part="generate-action">
+                    <div class="control-group-header"></div>
+                    <button class="btn-generate" id="btn-generate" type="button">Generate</button>
+                    <button class="btn-cancel-generation is-hidden" id="btn-cancel-generation" type="button" hidden>Cancel generation</button>
+                </div>
+
+                <div class="control-group" data-lm-part="kit-action">
+                    <div class="control-group-header"></div>
+                    <button class="btn-kit-toggle" id="btn-kit-toggle" type="button" title="Open the Kit Builder: one-shot drum kits, hit sheets, and slicer feed" aria-expanded="false" aria-controls="kit-builder-panel">Kit Builder</button>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status-bar" role="status" aria-live="polite" aria-atomic="true">
+                <div class="status-spinner" aria-hidden="true"></div>
+                <span class="status-text" id="status-text">Generating…</span>
+            </div>
+
+            <!-- Init Audio Badge -->
+            <div class="init-audio-badge" id="init-audio-badge">
+                <div class="init-audio-header">
+                    <span class="init-audio-label">
+                        <svg class="btn-icon inline-icon" viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8z"/></svg>
+                        Remixing: <strong id="init-audio-name">None</strong>
+                    </span>
+                    <button class="btn-clear-init" id="btn-clear-init" type="button" title="Clear Init Audio" aria-label="Clear Init Audio">×</button>
+                </div>
+                <div class="remix-mode-selector" role="group" aria-label="Remix Mode">
+                    <button class="remix-mode-btn active" data-mode="variation" type="button">Variation</button>
+                    <button class="remix-mode-btn" data-mode="response" type="button">Response</button>
+                    <button class="remix-mode-btn" data-mode="inpaint" type="button">Inpaint</button>
+                    <button class="remix-mode-btn" data-mode="continuation" type="button">Continuation</button>
+                </div>
+                <div class="invert-timing-control">
+                    <label class="toggle-switch remix-toggle" title="Reverse the seed audio timing and progression before generating">
+                        <input type="checkbox" id="toggle-invert-timing" name="invert_timing">
+                        <span class="toggle-track"></span>Invert Timing
+                    </label>
+                </div>
+                <!-- Variation parameters -->
+                <div id="remix-params-variation" class="remix-params-subpanel">
+                    <div class="init-noise-control remix-param-row">
+                        <label class="remix-param-label" for="init-noise-slider">Noise Level:</label>
+                        <input class="remix-param-slider" type="range" id="init-noise-slider" name="init_noise" min="10" max="90" value="60" step="5">
+                        <span class="remix-param-value" id="init-noise-value">0.60</span>
+                    </div>
+                </div>
+                <!-- Inpaint parameters -->
+                <div id="remix-params-inpaint" class="remix-params-subpanel remix-params-stack is-initially-hidden">
+                    <div class="remix-param-row">
+                        <label class="remix-param-label" for="inpaint-start-slider">Inpaint Start:</label>
+                        <input class="remix-param-slider" type="range" id="inpaint-start-slider" name="inpaint_start" min="0" max="80" value="20" step="1">
+                        <span class="remix-param-value" id="inpaint-start-val">2.0s</span>
+                    </div>
+                    <div class="remix-param-row">
+                        <label class="remix-param-label" for="inpaint-end-slider">Inpaint End:</label>
+                        <input class="remix-param-slider" type="range" id="inpaint-end-slider" name="inpaint_end" min="0" max="80" value="60" step="1">
+                        <span class="remix-param-value" id="inpaint-end-val">6.0s</span>
+                    </div>
+                </div>
+                <!-- Continuation parameters -->
+                <div id="remix-params-continuation" class="remix-params-subpanel is-initially-hidden">
+                    <div class="remix-param-row">
+                        <label class="remix-param-label" for="continue-start-slider">Keep First:</label>
+                        <input class="remix-param-slider" type="range" id="continue-start-slider" name="continue_start" min="0" max="80" value="40" step="1">
+                        <span class="remix-param-value" id="continue-start-val">4.0s</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kit Builder -->
+            <div class="kit-builder-panel is-initially-hidden" id="kit-builder-panel" aria-label="Kit Builder">
+                <div class="kit-builder-header">
+                    <span class="kit-builder-title">Kit Builder <span class="kit-builder-subtitle">one-shot drum kits, hit sheets &amp; slicer feed</span></span>
+                    <button class="btn-clear-init" id="btn-kit-close" type="button" title="Close Kit Builder" aria-label="Close Kit Builder">×</button>
+                </div>
+                <div class="kit-row">
+                    <div class="control-group kit-grow">
+                        <label class="control-label" for="kit-style-input">Kit Style</label>
+                        <input class="control-input" id="kit-style-input" type="text"
+                               placeholder="acoustic drum kit, vintage, punchy…"
+                               value="acoustic drum kit" autocomplete="off" spellcheck="false">
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="kit-name-input">Kit Name</label>
+                        <input class="control-input" id="kit-name-input" type="text"
+                               placeholder="my kit" autocomplete="off" spellcheck="false">
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="kit-variations-input" title="One-shots per velocity layer">Variations</label>
+                        <input class="control-input control-input-sm" id="kit-variations-input" type="number"
+                               min="1" max="3" value="1" step="1" inputmode="numeric">
+                    </div>
+                </div>
+                <div class="kit-row kit-pieces" id="kit-pieces" role="group" aria-label="Kit Pieces"></div>
+                <div class="kit-row kit-actions">
+                    <div class="kit-velocities" id="kit-velocities" role="group" aria-label="Velocity Layers">
+                        <span class="control-label">Velocities:</span>
+                        <label class="kit-check"><input type="checkbox" value="soft" checked>Soft</label>
+                        <label class="kit-check"><input type="checkbox" value="medium" checked>Medium</label>
+                        <label class="kit-check"><input type="checkbox" value="hard" checked>Hard</label>
+                    </div>
+                    <label class="kit-check" title="Also make one clip per piece with several hits separated by silence, tagged for the slicer">
+                        <input type="checkbox" id="kit-include-sheets">Hit sheets (slicer)
+                    </label>
+                    <button class="btn-generate" id="btn-build-kit" type="button">Build Kit</button>
+                </div>
+                <div class="kit-row kit-slicer-feed">
+                    <span class="control-label">Slicer feed:</span>
+                    <button class="prompt-pill-btn" id="btn-slice-break" type="button" title="Generate a drum break tagged for the slicer">Drum Break</button>
+                    <button class="prompt-pill-btn" id="btn-slice-perc" type="button" title="Generate a percussion loop tagged for the slicer">Perc Loop</button>
+                    <button class="prompt-pill-btn" id="btn-slice-texture" type="button" title="Generate a texture loop tagged for the slicer">Texture</button>
+                </div>
+                <div class="kit-results" id="kit-results"></div>
+            </div>
+        </section>
+
+
+
+        <!-- Transport Panel -->
+        <section class="transport-panel" aria-label="Playback and Project Controls" data-lm-region="transport">
+            <div class="transport-bar" id="transport-bar">
+                <button class="btn-transport" id="btn-play-pause" type="button" disabled aria-label="Play">
+                    <svg class="ic ic-play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 2.5l9 5.5-9 5.5z"/></svg>
+                    <svg class="ic ic-pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect x="3.5" y="2" width="3" height="12" rx="0.5"/><rect x="9.5" y="2" width="3" height="12" rx="0.5"/></svg>
+                </button>
+                <button class="btn-transport" id="btn-stop-all" type="button" disabled aria-label="Stop" title="Stop & Rewind">
+                    <svg class="ic ic-stop" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect x="3" y="3" width="10" height="10" rx="1"/></svg>
+                </button>
+                <button class="btn-transport btn-record" id="btn-record" type="button" disabled aria-label="Record" title="Toggle Loop Parameter Recording">
+                    <svg class="ic ic-record" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6" fill="currentColor"/></svg>
+                </button>
+
+                <span class="transport-time" role="timer">
+                    <span class="visually-hidden">Playback Position: </span>
+                    <span id="t-position">0:00.0</span> / <span id="t-duration">0:00.0</span>
+                </span>
+                
+                <!-- Master Meter & Limiter Section -->
+                <div class="master-meter-section" id="master-meter-section">
+                    <div class="master-filter-controls">
+                        <label class="visually-hidden" for="master-filter-type">Master Filter Type</label>
+                        <select id="master-filter-type" class="master-filter-select" name="master_filter_type" title="Filter Type">
+                            <option value="lowpass">LP</option>
+                            <option value="highpass">HP</option>
+                            <option value="bandpass">BP</option>
+                            <option value="notch">Notch</option>
+                        </select>
+                        <div id="master-cutoff-slider" class="level-knob master-filter-knob" title="Cutoff Frequency">
+                            <div class="knob-indicator"></div>
+                        </div>
+                        <div id="master-res-slider" class="level-knob master-filter-knob" title="Resonance">
+                            <div class="knob-indicator"></div>
+                        </div>
+                    </div>
+                    <span class="master-meter-label">MASTER</span>
+                    <div id="master-volume-slider" class="level-knob" title="Master Volume">
+                        <div class="knob-indicator"></div>
+                    </div>
+                    <span class="master-volume-readout" id="master-volume-readout">0.0 dB</span>
+                    <div class="master-meter-container">
+                        <canvas id="master-meter-canvas" width="140" height="8" aria-hidden="true"></canvas>
+                    </div>
+
+                </div>
+
+                <div class="transport-spacer"></div>
+
+
+                <button class="btn-transport btn-render-mix" id="btn-render-mix" type="button" disabled title="Render Mix" aria-label="Render Mix">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                </button>
+                <button class="btn-transport btn-export-loops" id="btn-export-loops" type="button" disabled title="Export Loops" aria-label="Export Loops">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </button>
+                <button class="btn-transport" id="btn-save-project" type="button" disabled title="Save Project (.lproj)" aria-label="Save Project">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                </button>
+                <button class="btn-transport" id="btn-load-project" type="button" title="Load Project (.lproj)" aria-label="Load Project">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                </button>
+                <input class="is-initially-hidden" type="file" id="project-file-input" name="project_file" accept=".lproj" aria-label="Choose Project File">
+                <button class="btn-transport btn-undo is-initially-hidden" id="btn-undo" type="button" title="Undo last action" aria-label="Undo Last Action">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                </button>
+                <button class="btn-transport btn-midi-learn" id="btn-midi-learn" type="button" title="Toggle MIDI Learn / Map Mode" aria-label="Toggle MIDI Learn Mode">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="7" r="1" fill="currentColor"/>
+                        <circle cx="8" cy="10" r="1" fill="currentColor"/>
+                        <circle cx="16" cy="10" r="1" fill="currentColor"/>
+                        <circle cx="9.5" cy="14" r="1" fill="currentColor"/>
+                        <circle cx="14.5" cy="14" r="1" fill="currentColor"/>
+                    </svg>
+                </button>
+                <label class="toggle-switch" title="Split cards: left = queue at loop start, right = instant switch">
+                    <input type="checkbox" id="toggle-split" name="split_mode">
+                    <span class="toggle-track"></span>Split
+                </label>
+                <label class="toggle-switch" title="Toggle Song Mode and Arranger view">
+                    <input type="checkbox" id="toggle-arranger" name="arranger_mode">
+                    <span class="toggle-track"></span>Song Mode
+                </label>
+            </div>
+
+            <!-- Visualizer Tray -->
+            <div class="visualizer-tray" id="visualizer-tray">
+                <canvas class="viz-canvas" id="viz-spectrum" title="Spectrum Analyzer" aria-hidden="true"></canvas>
+                <canvas class="viz-canvas" id="viz-oscilloscope" title="Oscilloscope" aria-hidden="true"></canvas>
+                <canvas class="viz-canvas viz-meters" id="viz-meters" title="Peak Meters" aria-hidden="true"></canvas>
+            </div>
+        </section>
+
+        <!-- Song Arranger Panel -->
+        <section class="arranger-panel is-initially-hidden" id="arranger-panel" aria-labelledby="arranger-heading" data-lm-region="arranger">
+            <div class="arranger-header">
+                <h2 id="arranger-heading">Song Arranger</h2>
+                <div class="arranger-controls">
+                    <label class="visually-hidden" for="arranger-length">Arrangement Length</label>
+                    <select id="arranger-length" class="arranger-length-select" name="arranger_length">
+                        <option value="8" selected>8 Loops</option>
+                        <option value="16">16 Loops</option>
+                        <option value="32">32 Loops</option>
+                        <option value="64">64 Loops</option>
+                    </select>
+                    <button class="arranger-btn" id="btn-clear-arrangement" type="button">Clear</button>
+                </div>
+            </div>
+            <div class="arranger-timeline-container" id="arranger-timeline-container">
+                <!-- Grid will be generated dynamically -->
+            </div>
+        </section>
+
+        <!-- Record Log Drawer -->
+        <section class="arranger-panel record-log-drawer is-initially-hidden" id="record-log-drawer" aria-labelledby="record-log-heading" data-lm-region="record-log">
+            <div class="arranger-header">
+                <h2 id="record-log-heading">Recorded Parameter Changes</h2>
+                <div class="arranger-controls">
+                    <button class="arranger-btn" id="btn-clear-record-log" type="button">Clear Logs</button>
+                </div>
+            </div>
+            <div class="record-log-list" id="record-log-list" role="log" aria-live="polite" aria-relevant="additions">
+                <div class="record-log-empty">No parameter changes recorded yet. Click Record and tweak knobs during playback.</div>
+            </div>
+        </section>
+
+        <!-- Track Rows -->
+        <section class="tracks-container empty" id="tracks-container" aria-label="Generated Tracks" data-lm-region="tracks">
+            <div class="grid-empty-state">
+                <div class="empty-state-welcome">
+                    <svg viewBox="0 0 24 24" class="welcome-logo-icon" aria-hidden="true" focusable="false"><path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/></svg>
+                    <h2>Build the first loop</h2>
+                    <p class="welcome-subtitle">Shape a prompt above, then generate.<br>New tracks land here and start playing in sync.</p>
+                </div>
+                <div class="footer-body" id="empty-state-body">
+                    <!-- Left Column: Getting Started (1, 2, 3, 4) -->
+                    <div class="footer-left">
+                        <span class="group-label">Start a session</span>
+                        <div class="quick-start-steps">
+                            <div class="qs-step">
+                                <span class="qs-num">1</span>
+                                <p>Choose a source, style, and character—or type the exact prompt you want. <strong>Randomize All</strong> rolls a fresh combination.</p>
+                            </div>
+                            <div class="qs-step">
+                                <span class="qs-num">2</span>
+                                <p>Set the BPM. Use <strong>Draft</strong> for quick ideas or <strong>Final</strong> for a keeper, then press <strong>Generate</strong> <code>[G]</code>.</p>
+                            </div>
+                            <div class="qs-step">
+                                <span class="qs-num">3</span>
+                                <p>Each track arrives with variations. Click a card to switch now, or turn on <strong>Split</strong> to queue it for the next loop.</p>
+                            </div>
+                            <div class="qs-step">
+                                <span class="qs-num">4</span>
+                                <p>Extend a keeper with <strong>2x</strong> or <strong>4x</strong>. <strong>Render Mix</strong> prints the session; <strong>Export Loops</strong> builds the loop pack.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Shortcuts compact grid -->
+                    <div class="footer-right">
+                        <span class="group-label">When tracks arrive</span>
+                        <div class="shortcuts-compact-grid">
+                            <div class="shortcut-item-compact"><kbd>Click</kbd> <span>Switch variation</span></div>
+                            <div class="shortcut-item-compact"><kbd>Split</kbd> <span>Queue next loop</span></div>
+                            <div class="shortcut-item-compact"><kbd>2x / 4x</kbd> <span>Extend loop</span></div>
+                            <div class="shortcut-item-compact"><kbd>Remix</kbd> <span>Reuse as input</span></div>
+                            <div class="shortcut-item-compact"><kbd>Lock</kbd> <span>Protect variation</span></div>
+                            <div class="shortcut-item-compact"><kbd>Song</kbd> <span>Arrange sections</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="track-wrapper modulators-panel" id="modulators-panel" aria-labelledby="modulators-heading" data-lm-region="modulators">
+            <div class="arranger-header">
+                <h2 id="modulators-heading">Global Modulators</h2>
+            </div>
+            
+            <div class="fx-drawer">
+                <!-- LFO 1 -->
+                <div class="fx-section lfo-section lfo1-section">
+                    <div class="fx-section-title">
+                        <div class="fx-title-label">
+                            <div class="lfo-timing-light" id="lfo1-timing-light"></div>
+                            <span>LFO 1</span>
+                        </div>
+                        <div class="fx-title-actions">
+                            <button class="fx-map-btn lfo1-map-btn" type="button" title="Map LFO 1 to parameter">Map</button>
+                            <button class="fx-toggle-btn lfo1-toggle" type="button">On</button>
+                        </div>
+                    </div>
+                    <div class="lfo-visualizer-container">
+                        <canvas id="lfo1-canvas" class="lfo-mini-canvas" width="160" height="34" aria-hidden="true"></canvas>
+                    </div>
+                    <div class="fx-controls-grid">
+                        <div class="fx-control-row">
+                            <label for="lfo1-shape">Shape</label>
+                            <select class="lfo-select" id="lfo1-shape" name="lfo1_shape">
+                                <option value="sine">Sine</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="sawtooth">Saw</option>
+                                <option value="square">Square</option>
+                                <option value="random">S&H</option>
+                            </select>
+                        </div>
+                        <div class="fx-control-row">
+                            <span>Sync</span>
+                            <label class="toggle-switch" title="Sync to BPM">
+                                <input type="checkbox" id="lfo1-sync-toggle" name="lfo1_sync" aria-label="Sync LFO 1 to BPM" checked>
+                                <span class="toggle-track"></span>
+                            </label>
+                        </div>
+                        <!-- Synced rate row -->
+                        <div class="fx-control-row" id="lfo1-rate-sync-row">
+                            <label for="lfo1-rate-sync">Rate</label>
+                            <select class="lfo-select" id="lfo1-rate-sync" name="lfo1_rate_sync">
+                                <option value="32">32/1 (32 Bars)</option>
+                                <option value="16">16/1 (16 Bars)</option>
+                                <option value="8">8/1 (8 Bars)</option>
+                                <option value="4">4/1 (4 Bars)</option>
+                                <option value="2">2 Bars</option>
+                                <option value="1" selected>1 Bar</option>
+                                <option value="0.5">1/2 Note</option>
+                                <option value="0.25">1/4 Note</option>
+                                <option value="0.125">1/8 Note</option>
+                                <option value="0.0625">1/16 Note</option>
+                            </select>
+                        </div>
+                        <!-- Free rate row -->
+                        <div class="fx-control-row is-initially-hidden" id="lfo1-rate-free-row">
+                            <label for="lfo1-rate-free">Rate</label>
+                            <input class="fx-control-grow" type="range" id="lfo1-rate-free" name="lfo1_rate_free" min="1" max="200" value="10" step="1">
+                            <span class="lfo-rate-value" id="lfo1-rate-val">1.0Hz</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- LFO 2 -->
+                <div class="fx-section lfo-section lfo2-section">
+                    <div class="fx-section-title">
+                        <div class="fx-title-label">
+                            <div class="lfo-timing-light" id="lfo2-timing-light"></div>
+                            <span>LFO 2</span>
+                        </div>
+                        <div class="fx-title-actions">
+                            <button class="fx-map-btn lfo2-map-btn" type="button" title="Map LFO 2 to parameter">Map</button>
+                            <button class="fx-toggle-btn lfo2-toggle" type="button">On</button>
+                        </div>
+                    </div>
+                    <div class="lfo-visualizer-container">
+                        <canvas id="lfo2-canvas" class="lfo-mini-canvas" width="160" height="34" aria-hidden="true"></canvas>
+                    </div>
+                    <div class="fx-controls-grid">
+                        <div class="fx-control-row">
+                            <label for="lfo2-shape">Shape</label>
+                            <select class="lfo-select" id="lfo2-shape" name="lfo2_shape">
+                                <option value="sine">Sine</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="sawtooth">Saw</option>
+                                <option value="square">Square</option>
+                                <option value="random">S&H</option>
+                            </select>
+                        </div>
+                        <div class="fx-control-row">
+                            <span>Sync</span>
+                            <label class="toggle-switch" title="Sync to BPM">
+                                <input type="checkbox" id="lfo2-sync-toggle" name="lfo2_sync" aria-label="Sync LFO 2 to BPM" checked>
+                                <span class="toggle-track"></span>
+                            </label>
+                        </div>
+                        <!-- Synced rate row -->
+                        <div class="fx-control-row" id="lfo2-rate-sync-row">
+                            <label for="lfo2-rate-sync">Rate</label>
+                            <select class="lfo-select" id="lfo2-rate-sync" name="lfo2_rate_sync">
+                                <option value="32">32/1 (32 Bars)</option>
+                                <option value="16">16/1 (16 Bars)</option>
+                                <option value="8">8/1 (8 Bars)</option>
+                                <option value="4">4/1 (4 Bars)</option>
+                                <option value="2">2 Bars</option>
+                                <option value="1" selected>1 Bar</option>
+                                <option value="0.5">1/2 Note</option>
+                                <option value="0.25">1/4 Note</option>
+                                <option value="0.125">1/8 Note</option>
+                                <option value="0.0625">1/16 Note</option>
+                            </select>
+                        </div>
+                        <!-- Free rate row -->
+                        <div class="fx-control-row is-initially-hidden" id="lfo2-rate-free-row">
+                            <label for="lfo2-rate-free">Rate</label>
+                            <input class="fx-control-grow" type="range" id="lfo2-rate-free" name="lfo2_rate_free" min="1" max="200" value="10" step="1">
+                            <span class="lfo-rate-value" id="lfo2-rate-val">1.0Hz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LFO 3 -->
+                <div class="fx-section lfo-section lfo3-section">
+                    <div class="fx-section-title">
+                        <div class="fx-title-label">
+                            <div class="lfo-timing-light" id="lfo3-timing-light"></div>
+                            <span>LFO 3</span>
+                        </div>
+                        <div class="fx-title-actions">
+                            <button class="fx-map-btn lfo3-map-btn" type="button" title="Map LFO 3 to parameter">Map</button>
+                            <button class="fx-toggle-btn lfo3-toggle" type="button">On</button>
+                        </div>
+                    </div>
+                    <div class="lfo-visualizer-container">
+                        <canvas id="lfo3-canvas" class="lfo-mini-canvas" width="160" height="34" aria-hidden="true"></canvas>
+                    </div>
+                    <div class="fx-controls-grid">
+                        <div class="fx-control-row">
+                            <label for="lfo3-shape">Shape</label>
+                            <select class="lfo-select" id="lfo3-shape" name="lfo3_shape">
+                                <option value="sine">Sine</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="sawtooth">Saw</option>
+                                <option value="square">Square</option>
+                                <option value="random">S&H</option>
+                            </select>
+                        </div>
+                        <div class="fx-control-row">
+                            <span>Sync</span>
+                            <label class="toggle-switch" title="Sync to BPM">
+                                <input type="checkbox" id="lfo3-sync-toggle" name="lfo3_sync" aria-label="Sync LFO 3 to BPM" checked>
+                                <span class="toggle-track"></span>
+                            </label>
+                        </div>
+                        <!-- Synced rate row -->
+                        <div class="fx-control-row" id="lfo3-rate-sync-row">
+                            <label for="lfo3-rate-sync">Rate</label>
+                            <select class="lfo-select" id="lfo3-rate-sync" name="lfo3_rate_sync">
+                                <option value="32">32/1 (32 Bars)</option>
+                                <option value="16">16/1 (16 Bars)</option>
+                                <option value="8">8/1 (8 Bars)</option>
+                                <option value="4">4/1 (4 Bars)</option>
+                                <option value="2">2 Bars</option>
+                                <option value="1" selected>1 Bar</option>
+                                <option value="0.5">1/2 Note</option>
+                                <option value="0.25">1/4 Note</option>
+                                <option value="0.125">1/8 Note</option>
+                                <option value="0.0625">1/16 Note</option>
+                            </select>
+                        </div>
+                        <!-- Free rate row -->
+                        <div class="fx-control-row is-initially-hidden" id="lfo3-rate-free-row">
+                            <label for="lfo3-rate-free">Rate</label>
+                            <input class="fx-control-grow" type="range" id="lfo3-rate-free" name="lfo3_rate_free" min="1" max="200" value="10" step="1">
+                            <span class="lfo-rate-value" id="lfo3-rate-val">1.0Hz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LFO 4 -->
+                <div class="fx-section lfo-section lfo4-section">
+                    <div class="fx-section-title">
+                        <div class="fx-title-label">
+                            <div class="lfo-timing-light" id="lfo4-timing-light"></div>
+                            <span>LFO 4</span>
+                        </div>
+                        <div class="fx-title-actions">
+                            <button class="fx-map-btn lfo4-map-btn" type="button" title="Map LFO 4 to parameter">Map</button>
+                            <button class="fx-toggle-btn lfo4-toggle" type="button">On</button>
+                        </div>
+                    </div>
+                    <div class="lfo-visualizer-container">
+                        <canvas id="lfo4-canvas" class="lfo-mini-canvas" width="160" height="34" aria-hidden="true"></canvas>
+                    </div>
+                    <div class="fx-controls-grid">
+                        <div class="fx-control-row">
+                            <label for="lfo4-shape">Shape</label>
+                            <select class="lfo-select" id="lfo4-shape" name="lfo4_shape">
+                                <option value="sine">Sine</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="sawtooth">Saw</option>
+                                <option value="square">Square</option>
+                                <option value="random">S&H</option>
+                            </select>
+                        </div>
+                        <div class="fx-control-row">
+                            <span>Sync</span>
+                            <label class="toggle-switch" title="Sync to BPM">
+                                <input type="checkbox" id="lfo4-sync-toggle" name="lfo4_sync" aria-label="Sync LFO 4 to BPM" checked>
+                                <span class="toggle-track"></span>
+                            </label>
+                        </div>
+                        <!-- Synced rate row -->
+                        <div class="fx-control-row" id="lfo4-rate-sync-row">
+                            <label for="lfo4-rate-sync">Rate</label>
+                            <select class="lfo-select" id="lfo4-rate-sync" name="lfo4_rate_sync">
+                                <option value="32">32/1 (32 Bars)</option>
+                                <option value="16">16/1 (16 Bars)</option>
+                                <option value="8">8/1 (8 Bars)</option>
+                                <option value="4">4/1 (4 Bars)</option>
+                                <option value="2">2 Bars</option>
+                                <option value="1" selected>1 Bar</option>
+                                <option value="0.5">1/2 Note</option>
+                                <option value="0.25">1/4 Note</option>
+                                <option value="0.125">1/8 Note</option>
+                                <option value="0.0625">1/16 Note</option>
+                            </select>
+                        </div>
+                        <!-- Free rate row -->
+                        <div class="fx-control-row is-initially-hidden" id="lfo4-rate-free-row">
+                            <label for="lfo4-rate-free">Rate</label>
+                            <input class="fx-control-grow" type="range" id="lfo4-rate-free" name="lfo4_rate_free" min="1" max="200" value="10" step="1">
+                            <span class="lfo-rate-value" id="lfo4-rate-val">1.0Hz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modulation Matrix -->
+                <div class="fx-section mod-matrix-section">
+                    <div class="fx-section-title">
+                        <span>Mod Matrix</span>
+                        <label class="toggle-switch toggle-compact" title="Bypass all modulation">
+                            <input type="checkbox" id="toggle-modulators-bypass" name="modulators_bypass">
+                            <span class="toggle-track"></span>Byp
+                        </label>
+                    </div>
+                    <div class="mod-matrix-slots-list">
+                        <!-- slots 1-8 -->
+                        <div class="mod-matrix-slot" data-slot="0">
+                            <div class="mod-matrix-slot-row">
+                                <span class="slot-num">1</span>
+                                <select class="mod-src" aria-label="Modulation Source">
+                                    <option value="none">None</option>
+                                    <option value="lfo1">LFO 1</option>
+                                    <option value="lfo2">LFO 2</option>
+                                    <option value="lfo3">LFO 3</option>
+                                    <option value="lfo4">LFO 4</option>
+                                </select>
+                                <select class="mod-dest-track" aria-label="Modulation Destination Track">
+                                    <option value="none">Track...</option>
+                                </select>
+                            </div>
+                            <div class="mod-matrix-slot-row">
+                                <select class="mod-dest-param" aria-label="Modulation Destination Parameter">
+                                    <option value="none">Param...</option>
+                                    <option value="level">Volume</option>
+                                    <option value="pan">Pan</option>
+                                    <option value="filter">Filter</option>
+                                    <option value="space">Space</option>
+                                    <option value="chorusRate">Chorus Rate</option>
+                                    <option value="chorusDepth">Chorus Depth</option>
+                                    <option value="chorusFeedback">Chorus Feedback</option>
+                                    <option value="phaserRate">Phaser Rate</option>
+                                    <option value="phaserDepth">Phaser Depth</option>
+                                    <option value="phaserFeedback">Phaser Feedback</option>
+                                    <option value="crusherBits">Crusher Bits</option>
+                                    <option value="crusherNormfreq">Crusher Freq Div</option>
+                                </select>
+                                <input type="range" class="mod-depth" aria-label="Modulation Depth" min="-100" max="100" value="0" step="5">
+                                <span class="mod-depth-val">0</span>
+                            </div>
+                        </div>
+                        <div class="mod-matrix-slot" data-slot="1">
+                            <div class="mod-matrix-slot-row">
+                                <span class="slot-num">2</span>
+                                <select class="mod-src" aria-label="Modulation Source">
+                                    <option value="none">None</option>
+                                    <option value="lfo1">LFO 1</option>
+                                    <option value="lfo2">LFO 2</option>
+                                    <option value="lfo3">LFO 3</option>
+                                    <option value="lfo4">LFO 4</option>
+                                </select>
+                                <select class="mod-dest-track" aria-label="Modulation Destination Track">
+                                    <option value="none">Track...</option>
+                                </select>
+                            </div>
+                            <div class="mod-matrix-slot-row">
+                                <select class="mod-dest-param" aria-label="Modulation Destination Parameter">
+                                    <option value="none">Param...</option>
+                                    <option value="level">Volume</option>
+                                    <option value="pan">Pan</option>
+                                    <option value="filter">Filter</option>
+                                    <option value="space">Space</option>
+                                    <option value="chorusRate">Chorus Rate</option>
+                                    <option value="chorusDepth">Chorus Depth</option>
+                                    <option value="chorusFeedback">Chorus Feedback</option>
+                                    <option value="phaserRate">Phaser Rate</option>
+                                    <option value="phaserDepth">Phaser Depth</option>
+                                    <option value="phaserFeedback">Phaser Feedback</option>
+                                    <option value="crusherBits">Crusher Bits</option>
+                                    <option value="crusherNormfreq">Crusher Freq Div</option>
+                                </select>
+                                <input type="range" class="mod-depth" aria-label="Modulation Depth" min="-100" max="100" value="0" step="5">
+                                <span class="mod-depth-val">0</span>
+                            </div>
+                        </div>
+                        <div class="mod-matrix-slot" data-slot="2">
+                            <div class="mod-matrix-slot-row">
+                                <span class="slot-num">3</span>
+                                <select class="mod-src" aria-label="Modulation Source">
+                                    <option value="none">None</option>
+                                    <option value="lfo1">LFO 1</option>
+                                    <option value="lfo2">LFO 2</option>
+                                    <option value="lfo3">LFO 3</option>
+                                    <option value="lfo4">LFO 4</option>
+                                </select>
+                                <select class="mod-dest-track" aria-label="Modulation Destination Track">
+                                    <option value="none">Track...</option>
+                                </select>
+                            </div>
+                            <div class="mod-matrix-slot-row">
+                                <select class="mod-dest-param" aria-label="Modulation Destination Parameter">
+                                    <option value="none">Param...</option>
+                                    <option value="level">Volume</option>
+                                    <option value="pan">Pan</option>
+                                    <option value="filter">Filter</option>
+                                    <option value="space">Space</option>
+                                    <option value="chorusRate">Chorus Rate</option>
+                                    <option value="chorusDepth">Chorus Depth</option>
+                                    <option value="chorusFeedback">Chorus Feedback</option>
+                                    <option value="phaserRate">Phaser Rate</option>
+                                    <option value="phaserDepth">Phaser Depth</option>
+                                    <option value="phaserFeedback">Phaser Feedback</option>
+                                    <option value="crusherBits">Crusher Bits</option>
+                                    <option value="crusherNormfreq">Crusher Freq Div</option>
+                                </select>
+                                <input type="range" class="mod-depth" aria-label="Modulation Depth" min="-100" max="100" value="0" step="5">
+                                <span class="mod-depth-val">0</span>
+                            </div>
+                        </div>
+                        <div class="mod-matrix-slot" data-slot="3">
+                            <div class="mod-matrix-slot-row">
+                                <span class="slot-num">4</span>
+                                <select class="mod-src" aria-label="Modulation Source">
+                                    <option value="none">None</option>
+                                    <option value="lfo1">LFO 1</option>
+                                    <option value="lfo2">LFO 2</option>
+                                    <option value="lfo3">LFO 3</option>
+                                    <option value="lfo4">LFO 4</option>
+                                </select>
+                                <select class="mod-dest-track" aria-label="Modulation Destination Track">
+                                    <option value="none">Track...</option>
+                                </select>
+                            </div>
+                            <div class="mod-matrix-slot-row">
+                                <select class="mod-dest-param" aria-label="Modulation Destination Parameter">
+                                    <option value="none">Param...</option>
+                                    <option value="level">Volume</option>
+                                    <option value="pan">Pan</option>
+                                    <option value="filter">Filter</option>
+                                    <option value="space">Space</option>
+                                    <option value="chorusRate">Chorus Rate</option>
+                                    <option value="chorusDepth">Chorus Depth</option>
+                                    <option value="chorusFeedback">Chorus Feedback</option>
+                                    <option value="phaserRate">Phaser Rate</option>
+                                    <option value="phaserDepth">Phaser Depth</option>
+                                    <option value="phaserFeedback">Phaser Feedback</option>
+                                    <option value="crusherBits">Crusher Bits</option>
+                                    <option value="crusherNormfreq">Crusher Freq Div</option>
+                                </select>
+                                <input type="range" class="mod-depth" aria-label="Modulation Depth" min="-100" max="100" value="0" step="5">
+                                <span class="mod-depth-val">0</span>
+                            </div>
+                        </div>
+                        <div class="mod-matrix-slot" data-slot="4">
+                            <div class="mod-matrix-slot-row">
+                                <span class="slot-num">5</span>
+                                <select class="mod-src" aria-label="Modulation Source">
+                                    <option value="none">None</option>
+                                    <option value="lfo1">LFO 1</option>
+                                    <option value="lfo2">LFO 2</option>
+                                    <option value="lfo3">LFO 3</option>
+                                    <option value="lfo4">LFO 4</option>
+                                </select>
+                                <select class="mod-dest-track" aria-label="Modulation Destination Track">
+                                    <option value="none">Track...</option>
+                                </select>
+                            </div>
+                            <div class="mod-matrix-slot-row">
+                                <select class="mod-dest-param" aria-label="Modulation Destination Parameter">
+                                    <option value="none">Param...</option>
+                                    <option value="level">Volume</option>
+                                    <option value="pan">Pan</option>
+                                    <option value="filter">Filter</option>
+                                    <option value="space">Space</option>
+                                    <option value="chorusRate">Chorus Rate</option>
+                                    <option value="chorusDepth">Chorus Depth</option>
+                                    <option value="chorusFeedback">Chorus Feedback</option>
+                                    <option value="phaserRate">Phaser Rate</option>
+                                    <option value="phaserDepth">Phaser Depth</option>
+                                    <option value="phaserFeedback">Phaser Feedback</option>
+                                    <option value="crusherBits">Crusher Bits</option>
+                                    <option value="crusherNormfreq">Crusher Freq Div</option>
+                                </select>
+                                <input type="range" class="mod-depth" aria-label="Modulation Depth" min="-100" max="100" value="0" step="5">
+                                <span class="mod-depth-val">0</span>
+                            </div>
+                        </div>
+                        <div class="mod-matrix-slot" data-slot="5">
+                            <div class="mod-matrix-slot-row">
+                                <span class="slot-num">6</span>
+                                <select class="mod-src" aria-label="Modulation Source">
+                                    <option value="none">None</option>
+                                    <option value="lfo1">LFO 1</option>
+                                    <option value="lfo2">LFO 2</option>
+                                    <option value="lfo3">LFO 3</option>
+                                    <option value="lfo4">LFO 4</option>
+                                </select>
+                                <select class="mod-dest-track" aria-label="Modulation Destination Track">
+                                    <option value="none">Track...</option>
+                                </select>
+                            </div>
+                            <div class="mod-matrix-slot-row">
+                                <select class="mod-dest-param" aria-label="Modulation Destination Parameter">
+                                    <option value="none">Param...</option>
+                                    <option value="level">Volume</option>
+                                    <option value="pan">Pan</option>
+                                    <option value="filter">Filter</option>
+                                    <option value="space">Space</option>
+                                    <option value="chorusRate">Chorus Rate</option>
+                                    <option value="chorusDepth">Chorus Depth</option>
+                                    <option value="chorusFeedback">Chorus Feedback</option>
+                                    <option value="phaserRate">Phaser Rate</option>
+                                    <option value="phaserDepth">Phaser Depth</option>
+                                    <option value="phaserFeedback">Phaser Feedback</option>
+                                    <option value="crusherBits">Crusher Bits</option>
+                                    <option value="crusherNormfreq">Crusher Freq Div</option>
+                                </select>
+                                <input type="range" class="mod-depth" aria-label="Modulation Depth" min="-100" max="100" value="0" step="5">
+                                <span class="mod-depth-val">0</span>
+                            </div>
+                        </div>
+                        <div class="mod-matrix-slot" data-slot="6">
+                            <div class="mod-matrix-slot-row">
+                                <span class="slot-num">7</span>
+                                <select class="mod-src" aria-label="Modulation Source">
+                                    <option value="none">None</option>
+                                    <option value="lfo1">LFO 1</option>
+                                    <option value="lfo2">LFO 2</option>
+                                    <option value="lfo3">LFO 3</option>
+                                    <option value="lfo4">LFO 4</option>
+                                </select>
+                                <select class="mod-dest-track" aria-label="Modulation Destination Track">
+                                    <option value="none">Track...</option>
+                                </select>
+                            </div>
+                            <div class="mod-matrix-slot-row">
+                                <select class="mod-dest-param" aria-label="Modulation Destination Parameter">
+                                    <option value="none">Param...</option>
+                                    <option value="level">Volume</option>
+                                    <option value="pan">Pan</option>
+                                    <option value="filter">Filter</option>
+                                    <option value="space">Space</option>
+                                    <option value="chorusRate">Chorus Rate</option>
+                                    <option value="chorusDepth">Chorus Depth</option>
+                                    <option value="chorusFeedback">Chorus Feedback</option>
+                                    <option value="phaserRate">Phaser Rate</option>
+                                    <option value="phaserDepth">Phaser Depth</option>
+                                    <option value="phaserFeedback">Phaser Feedback</option>
+                                    <option value="crusherBits">Crusher Bits</option>
+                                    <option value="crusherNormfreq">Crusher Freq Div</option>
+                                </select>
+                                <input type="range" class="mod-depth" aria-label="Modulation Depth" min="-100" max="100" value="0" step="5">
+                                <span class="mod-depth-val">0</span>
+                            </div>
+                        </div>
+                        <div class="mod-matrix-slot" data-slot="7">
+                            <div class="mod-matrix-slot-row">
+                                <span class="slot-num">8</span>
+                                <select class="mod-src" aria-label="Modulation Source">
+                                    <option value="none">None</option>
+                                    <option value="lfo1">LFO 1</option>
+                                    <option value="lfo2">LFO 2</option>
+                                    <option value="lfo3">LFO 3</option>
+                                    <option value="lfo4">LFO 4</option>
+                                </select>
+                                <select class="mod-dest-track" aria-label="Modulation Destination Track">
+                                    <option value="none">Track...</option>
+                                </select>
+                            </div>
+                            <div class="mod-matrix-slot-row">
+                                <select class="mod-dest-param" aria-label="Modulation Destination Parameter">
+                                    <option value="none">Param...</option>
+                                    <option value="level">Volume</option>
+                                    <option value="pan">Pan</option>
+                                    <option value="filter">Filter</option>
+                                    <option value="space">Space</option>
+                                    <option value="chorusRate">Chorus Rate</option>
+                                    <option value="chorusDepth">Chorus Depth</option>
+                                    <option value="chorusFeedback">Chorus Feedback</option>
+                                    <option value="phaserRate">Phaser Rate</option>
+                                    <option value="phaserDepth">Phaser Depth</option>
+                                    <option value="phaserFeedback">Phaser Feedback</option>
+                                    <option value="crusherBits">Crusher Bits</option>
+                                    <option value="crusherNormfreq">Crusher Freq Div</option>
+                                </select>
+                                <input type="range" class="mod-depth" aria-label="Modulation Depth" min="-100" max="100" value="0" step="5">
+                                <span class="mod-depth-val">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Env 1 (hidden) -->
+                <div class="fx-section env-section is-initially-hidden">
+                    <div class="fx-section-title">
+                        <span>Env 1</span>
+                    </div>
+                    <div class="fx-controls-grid">
+                        <div class="fx-control-row">
+                            <label for="env1-a">Attack</label>
+                            <input class="fx-control-grow" type="range" id="env1-a" name="env1_attack" min="0" max="50" value="10" step="1">
+                            <span class="env1-a-val fx-value-wide">1.0s</span>
+                        </div>
+                        <div class="fx-control-row">
+                            <label for="env1-d">Decay</label>
+                            <input class="fx-control-grow" type="range" id="env1-d" name="env1_decay" min="0" max="50" value="20" step="1">
+                            <span class="env1-d-val fx-value-wide">2.0s</span>
+                        </div>
+                        <div class="fx-control-row">
+                            <label for="env1-s">Sustain</label>
+                            <input class="fx-control-grow" type="range" id="env1-s" name="env1_sustain" min="0" max="100" value="50" step="5">
+                            <span class="env1-s-val fx-value-wide">50%</span>
+                        </div>
+                        <div class="fx-control-row">
+                            <label for="env1-r">Release</label>
+                            <input class="fx-control-grow" type="range" id="env1-r" name="env1_release" min="0" max="50" value="20" step="1">
+                            <span class="env1-r-val fx-value-wide">2.0s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Env 2 (hidden) -->
+                <div class="fx-section env-section is-initially-hidden">
+                    <div class="fx-section-title">
+                        <span>Env 2</span>
+                    </div>
+                    <div class="fx-controls-grid">
+                        <div class="fx-control-row">
+                            <label for="env2-a">Attack</label>
+                            <input class="fx-control-grow" type="range" id="env2-a" name="env2_attack" min="0" max="50" value="10" step="1">
+                            <span class="env2-a-val fx-value-wide">1.0s</span>
+                        </div>
+                        <div class="fx-control-row">
+                            <label for="env2-d">Decay</label>
+                            <input class="fx-control-grow" type="range" id="env2-d" name="env2_decay" min="0" max="50" value="20" step="1">
+                            <span class="env2-d-val fx-value-wide">2.0s</span>
+                        </div>
+                        <div class="fx-control-row">
+                            <label for="env2-s">Sustain</label>
+                            <input class="fx-control-grow" type="range" id="env2-s" name="env2_sustain" min="0" max="100" value="50" step="5">
+                            <span class="env2-s-val fx-value-wide">50%</span>
+                        </div>
+                        <div class="fx-control-row">
+                            <label for="env2-r">Release</label>
+                            <input class="fx-control-grow" type="range" id="env2-r" name="env2_release" min="0" max="50" value="20" step="1">
+                            <span class="env2-r-val fx-value-wide">2.0s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Header & Keyboard Shortcuts Graphic -->
+    <footer class="app-footer" id="app-footer" aria-labelledby="shortcuts-heading" data-lm-region="help">
+        <div class="footer-header">
+            <h2 id="shortcuts-heading">Session reference</h2>
+            <button class="footer-toggle-btn" id="btn-toggle-footer" type="button" title="Toggle session reference" aria-label="Toggle session reference" aria-controls="footer-body">
+                <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+        </div>
+        <div class="footer-body" id="footer-body">
+            <!-- Left Column: Getting Started (1, 2, 3, 4) -->
+            <div class="footer-left">
+                <span class="group-label">Playback &amp; export</span>
+                <div class="quick-start-steps">
+                    <div class="qs-step">
+                        <span class="qs-num">1</span>
+                        <p><strong>BPM</strong> sets the four-bar loop length and keeps every track on the same grid.</p>
+                    </div>
+                    <div class="qs-step">
+                        <span class="qs-num">2</span>
+                        <p><strong>Split</strong> queues left-side card clicks for the next loop. Right-side clicks switch immediately.</p>
+                    </div>
+                    <div class="qs-step">
+                        <span class="qs-num">3</span>
+                        <p><strong>Song Mode</strong> follows the arranger grid. Track mute and solo controls still apply.</p>
+                    </div>
+                    <div class="qs-step">
+                        <span class="qs-num">4</span>
+                        <p><strong>Render Mix</strong> prints one performance. <strong>Export Loops</strong> packages the source files.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column: Shortcuts compact grid -->
+            <div class="footer-right">
+                <span class="group-label">Key commands</span>
+                <div class="shortcuts-compact-grid">
+                    <div class="shortcut-item-compact"><kbd>Space</kbd> <span>Play / pause</span></div>
+                    <div class="shortcut-item-compact"><kbd>S</kbd> <span>Stop + rewind</span></div>
+                    <div class="shortcut-item-compact"><kbd>X</kbd> <span>Render mix</span></div>
+                    <div class="shortcut-item-compact"><kbd>E</kbd> <span>Export loop pack</span></div>
+                    <div class="shortcut-item-compact"><kbd>P</kbd> <span>Capture screen</span></div>
+                    <div class="shortcut-item-compact"><kbd>G</kbd> <span>Generate track</span></div>
+                    <div class="shortcut-item-compact"><kbd>H</kbd> <span>Open history</span></div>
+                    <div class="shortcut-item-compact"><kbd>V</kbd> <span>Save project</span></div>
+                    <div class="shortcut-item-compact"><kbd>N</kbd> <span>Randomize prompt</span></div>
+                    <div class="shortcut-item-compact"><kbd>O</kbd> <span>Load project</span></div>
+                    <div class="shortcut-item-compact"><kbd>T</kbd> <span>Toggle split mode</span></div>
+                    <div class="shortcut-item-compact"><kbd>F</kbd> <span>Toggle song mode</span></div>
+                    <div class="shortcut-item-compact"><kbd>U</kbd> <span>Start MIDI learn</span></div>
+                    <div class="shortcut-item-compact"><kbd>W</kbd> <span>Open modulators</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Export Settings Modal -->
+    <div id="skin-picker-modal" class="modal-overlay skin-picker-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="skin-picker-title" hidden data-lm-part="modal">
+        <div class="modal-content skin-picker-content">
+            <h2 class="modal-title" id="skin-picker-title">Reinterpret LoopMaster</h2>
+            <p class="skin-picker-intro">Skins can reshape the entire workstation while every prompt, track, control, and shortcut stays intact.</p>
+            <div class="skin-picker-grid" id="skin-picker-grid"></div>
+            <p class="skin-picker-status" id="skin-picker-status" role="status" aria-live="polite"></p>
+            <div class="modal-buttons">
+                <button class="btn-generate modal-primary-action" id="btn-skin-picker-done" type="button">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="export-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="export-modal-title" data-lm-part="modal">
+        <div class="modal-content">
+            <h2 class="modal-title" id="export-modal-title">Export Settings</h2>
+            
+            <div class="export-modal-form">
+                <div class="control-group" id="export-filename-group">
+                    <label class="control-label" for="export-filename-input">Filename</label>
+                    <input class="control-input" id="export-filename-input" type="text"
+                           name="export_filename" placeholder="Enter filename…" autocomplete="off" spellcheck="false">
+                </div>
+
+                <div class="control-group" id="export-loops-group">
+                    <label class="control-label" for="export-loops-input">Loops to Render</label>
+                    <input class="control-input" id="export-loops-input" type="number" name="export_loops" inputmode="numeric" min="1" max="999" value="1" step="1">
+                </div>
+
+                <div class="control-group" id="export-format-group">
+                    <label class="control-label" for="export-format-select">Format</label>
+                    <select id="export-format-select" class="render-format-select full-width" name="export_format">
+                        <option value="wav">WAV (Lossless)</option>
+                        <option value="mp3">MP3 (High Quality)</option>
+                        <option value="ogg">OGG (Vorbis)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="btn-generate modal-primary-action" id="btn-export-confirm" type="button">Export</button>
+                <button class="btn-modal-cancel" id="btn-export-cancel" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="file-naming-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="file-naming-modal-title" data-lm-part="modal">
+        <div class="modal-content file-naming-modal-content">
+            <h2 class="modal-title" id="file-naming-modal-title">Loop Pack File Naming</h2>
+            <p class="file-naming-help">These fields control exported filenames and sidecars; they do not change the musical prompt.</p>
+            <div class="file-naming-fields">
+                <label class="asset-metadata-field" for="pack-name-input">
+                    <span class="chip-label">Pack</span>
+                    <input id="pack-name-input" type="text" maxlength="120" value="loopmaster" spellcheck="false" autocomplete="off" placeholder="cookout">
+                </label>
+                <label class="asset-metadata-field" for="descriptor-input">
+                    <span class="chip-label">File descriptor</span>
+                    <input id="descriptor-input" type="text" maxlength="240" spellcheck="false" autocomplete="off" placeholder="Auto from the active instrument or drums">
+                </label>
+            </div>
+            <p class="file-naming-example">Example: <code>cookout_smokerise_140bpm_gbmin_8bar_a1.wav</code></p>
+            <div class="modal-buttons">
+                <button class="btn-generate modal-primary-action" id="btn-file-naming-save" type="button">Save</button>
+                <button class="btn-modal-cancel" id="btn-file-naming-cancel" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Removed tuna.js -->
+    <script src="/static/vendor/html2canvas-1.4.1.min.js"></script>
+    <script src="/static/prompt_core.js"></script>
+    <script src="/static/chord_progression_core.js"></script>
+    <script src="/static/prompt_builder.js"></script>
+    <script src="/static/wav_metadata_core.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
